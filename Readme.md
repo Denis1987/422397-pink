@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Арнаут](https://up.htmlacademy.ru/adaptive/12/user/422397).
-* Наставник: `Неизвестно`.
+* Наставник:  [Михаил Косымов!!!](https://htmlacademy.ru/profile/grraoo).
 
 ---
 
