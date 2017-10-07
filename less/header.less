@@ -1,21 +1,131 @@
-}
-.header__link{
+.header__link {
     font-size: 18px;
     line-height: 32px;
 }
-.header{
+
+.header {
     background-color: @dark_blue;
     color: @white;
 }
-.header a{
+
+.header__menu {
+    padding-bottom: 395px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+}
+
+.header__headline h1 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: lighter;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__headline {
+    margin-bottom: 54px;
+
+
+}
+
+.header--form {
+    margin-bottom: 34px;
+}
+
+.header__menu--index {
+    position: relative;
+}
+
+.header__menu--index:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/iphone-hand-mobile@1x.png);
+    width: 258px;
+    height: 286px;
+    display: block;
+    bottom: 0;
+}
+
+.header__nav {
+    border-top: 1px solid #000;
+}
+
+.header a {
     color: @white;
 }
-.download__link{
+
+.download__link {
     font-size: 18px;
     line-height: 18px;
 }
-.download__choice{
+
+.header__logtog {
+
+    background-color: rgba(28, 37, 48, 0.5);
+}
+
+.download__choice {
     line-height: 24px;
     font-size: 14px;
 }
 
+.header__list {
+    padding: 0;
+    margin: 0;
+    background-color: @dark_blue;
+
+}
+
+.header__item {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #485461;
+}
+
+.header__link {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.header__logo {
+    width: 75px;
+    height: 23px;
+}
+
+.header__logtog {
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.header__toggler {
+    width: 50px;
+    height: 24px;
+    top: 20px;
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: 2;
+    right: 20px;
+    background-image: url(../img/icon-menu-burger.svg);
+}
+
+
+
+.header--form .header__headline {
+    padding-top: 13px;
+}
+
+.header--form .header__menu--form {
+    padding-bottom: 1px;
+    background-position: center 246px;
+}
