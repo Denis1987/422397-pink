@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
             <div class="container">
                 <h2 class="main__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
             </div>
-            <article class="gallery__article">
+            <article class="gallery__article gallery__article--first">
 
                 <div class="gallery__panorama">
                     <span class="gallery__span">панорама дня</span>
@@ -62,7 +63,7 @@
             <div class="container">
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-car-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Левон <span>(5 часов назад)</span></h2>
@@ -73,11 +74,11 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-drumset-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Антон
-                            <sapn>(12 часов назад)</sapn>
+                            <span>(12 часов назад)</span>
                         </h2>
                         <p class="gallery__info">Соседи будут рады!</p>
                         <button type="button" class="gallery__rating"></button>
@@ -86,7 +87,7 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-window-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Борис<span>(20 часов назад)</span></h2>
@@ -97,7 +98,7 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-fair-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Сергей<span>(25 часов назад)</span></h2>
@@ -108,7 +109,7 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-pov-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Максим<span>(40 часов назад)</span></h2>
@@ -119,7 +120,7 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="http://placehold.it/150x100">
+                        <img class="gallery__img" src="img/photo-wing-mobile@1x.jpg">
                     </div>
                     <div class="gallery__user-comment">
                         <h2 class="gallery__user">Надежда<span>(45 часов назад)</span></h2>
@@ -128,40 +129,49 @@
                         <a class="gallery__likes">Нравится: 2560</a>
                     </div>
                 </article>
-                <h2 class="gallery__subtitle-bottom">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+                <h2 class="gallery__subtitle-bottom">Затмите их всех! Выкладывайте&#160;все,&#160;что накопилось в телефоне!</h2>
             </div>
         </section>
         <section class="process">
             <div class="container">
                 <form class="process__form" action="https://echo.htmlacademy.ru">
-                    <img src="http://placehold.it/150x100" class="process__img">
-                    <div class="process__range process__frame">
-                        <div class="process__scale">
-                            <div class="process__bar"></div>
+                    <img src="img/photo-road-mobile@1x.jpg" class="process__img">
+                    <div class="process__settings">
+                        <div class="process__range-btn">
+                            <button class="process__btn-frame"></button>
+                            <button class="process__btn-casting"></button>
+                            <button class="process__btn-contrast"></button>
                         </div>
-                        <div class="process__toggle"></div>
-                    </div>
-                    <div class="process__range process__casting">
-                        <div class="process__scale">
-                            <div class="process__bar"></div>
+                        <div class="process__ranges">
+                            <div class="process__range process__frame">
+                                <div class="process__scale">
+                                    <div class="process__bar"></div>
+                                </div>
+                                <div class="process__toggle"></div>
+                            </div>
+                            <div class="process__range process__casting">
+                                <div class="process__scale">
+                                    <div class="process__bar"></div>
+                                </div>
+                                <div class="process__toggle"></div>
+                            </div>
+                            <div class="process__range process__contrast">
+                                <div class="process__scale">
+                                    <div class="process__bar"></div>
+                                </div>
+                                <div class="process__toggle"></div>
+                            </div>
                         </div>
-                        <div class="process__toggle"></div>
-                    </div>
-                    <div class="process__range process__contrast">
-                        <div class="process__scale">
-                            <div class="process__bar"></div>
-                        </div>
-                        <div class="process__toggle"></div>
                     </div>
                     <button class="process__post" type="submit">Запостить</button>
                     <button class="process__reset" type="reset">Отмена</button>
                 </form>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer footer--photo">
             <div class="container">
                 <div class="footer__logo">
-                    <img src="http://placehold.it/150x100" alt="logo">
+                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>
@@ -170,7 +180,7 @@
                 </div>
                 <div class="footer__copyright">
                     <span>Разработано</span>
-                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"></a>
+                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"><img src="img/logo-htmlacademy.svg" alt="logo academy"></a>
                 </div>
             </div>
         </footer>

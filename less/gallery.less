@@ -1,6 +1,6 @@
-.gallery > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+.gallery .container {
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .gallery {
@@ -38,6 +38,7 @@
 
 .gallery .main__subtitle {
     margin-bottom: 49px;
+    padding: 0px 15px;
 }
 
 .gallery__user-comment {
@@ -49,6 +50,9 @@
     line-height: 24px;
     color: @dark_blue;
 
+    margin-bottom: 0px;
+    display: block;
+
 }
 
 .gallery__article {
@@ -59,4 +63,100 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: @dark_blue;
+    margin-bottom: 20px;
+}
+
+.gallery__article--first {
+    margin-bottom: 19px;
+}
+
+.gallery__article .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.gallery__user span,
+.gallery__likes {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: lighter;
+    margin-left: 3px;
+
+}
+
+.gallery__article--first .gallery__user-comment {
+    padding-bottom: 19px;
+    padding-top: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+}
+
+.gallery__user-comment {
+    padding-top: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 19px;
+}
+
+.gallery__article--first .gallery__info {
+    margin-bottom: 10px;
+}
+
+
+.gallery__info {
+    margin-top: 0px;
+    letter-spacing: 0.2px;
+    display: block;
+    line-height: 24px;
+
+    margin-bottom: 9px;
+}
+
+.gallery__rating {
+    background-image: url(../img/icon-heart.svg);
+    width: 13px;
+    height: 12px;
+    background-color: inherit;
+    border: none;
+}
+
+.gallery__likes {
+    margin-left: 14px;
+    letter-spacing: 0.3px;
+    color: @cherry;
+}
+
+.gallery__photo {
+    height: 180px;
+}
+
+.gallery__article:nth-child(3) .gallery__info,
+.gallery__article:nth-child(2) .gallery__info,
+.gallery__article:nth-child(4) .gallery__info {
+    margin-bottom: 11px;
+}
+
+.gallery__article:nth-child(5) .gallery__info,
+.gallery__article:nth-child(6) .gallery__info {
+    margin-bottom: 12px;
+}
+
+.gallery__subtitle-bottom {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @dark_blue;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    letter-spacing: 1xp;
+    display: block;
+    letter-spacing: 0.4px;
+    width: 280px;
+    margin-bottom: 41px;
 }
