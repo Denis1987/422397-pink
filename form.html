@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--form">
         <div class="container">
-            <div class="header__menu">
-                <a class="header__logo">PINK</a>
-                <a class="header__toggler"></a>
+            <div class="header__menu header__menu--form">
+                <div class="header__logtog">
+                    <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
+                    <a class="header__toggler"></a>
+                </div>
                 <nav class="header__nav">
-                    <ul>
-                        <li>
-                            <a href="index.html">Главная</a>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="index.html">Главная</a>
                         </li>
-                        <li>
-                            <a href="photo.html">Фотографии</a>
+                        <li class="header__item">
+                            <a class="header__link" href="photo.html">Фотографии</a>
                         </li>
-                        <li>
-                            <a href="#">Конкурс</a>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Конкурс</a>
                         </li>
-                        <li>
-                            <a href="https://htmlacademy.ru/">html academy</a>
+                        <li class="header__item">
+                            <a class="header__link" href="https://htmlacademy.ru/">html academy</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="header__headline">
+                    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+                </div>
             </div>
-            <div class="header__headline">
-            <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-            </div>
+
         </div>
     </header>
     <main class="main">
@@ -59,38 +65,39 @@
                         <legend class="form__choice">Ваши безбашенные достижения в путешествии</legend>
                         <ul class="form__ul">
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-1">
-                                <label class="form__adventure" for="adventure-1">Сделал селфи с акулой</label>
+
+                                <label class="form__adventure" for="adventure-1"><input class="form__check" type="checkbox" name="achievements" id="adventure-1">
+                                    <span class="checkbox_indicator"></span>Сделал селфи с акулой</label>
                             </li>
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-2">
-                                <label class="form__adventure" for="adventure-2">Обгорел на пляже</label>
+
+                                <label class="form__adventure" for="adventure-2"><input class="form__check" type="checkbox" name="achievements" id="adventure-2"><span class="checkbox_indicator"></span>Обгорел на пляже</label>
                             </li>
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-3">
-                                <label class="form__adventure" for="adventure-3">Видел Чака Норриса</label>
+
+                                <label class="form__adventure" for="adventure-3"> <input class="form__check" type="checkbox" name="achievements" id="adventure-3"><span class="checkbox_indicator"></span>Видел Чака Норриса</label>
                             </li>
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-3">
-                                <label class="form__adventure" for="adventure-3">Накупил сувениров</label>
+
+                                <label class="form__adventure" for="adventure-4"> <input class="form__check" type="checkbox" name="achievements" id="adventure-4"><span class="checkbox_indicator"></span>Накупил сувениров</label>
                             </li>
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-4">
-                                <label class="form__adventure" for="adventure-4">Удержал башню</label>
+
+                                <label class="form__adventure" for="adventure-5">   <input class="form__check" type="checkbox" name="achievements" id="adventure-5"><span class="checkbox_indicator"></span>Удержал башню</label>
                             </li>
                             <li class="form__li">
-                                <input class="form__check" type="checkbox" name="achievements" id="adventure-5">
-                                <label class="form__adventure" for="adventure-5">Разгромил отель</label>
+
+                                <label class="form__adventure" for="adventure-6"><input class="form__check" type="checkbox" name="achievements" id="adventure-6"><span class="checkbox_indicator"></span>Разгромил отель</label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="form__contacts">
-                        <div class="form__phone">
+                        <div class="form__fieldset form__phone">
                             <label class="form__user" for="phone">Номер телефона
                             </label>
                             <input class="form__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
                         </div>
-                        <div class="form__mail">
+                        <div class="form__fieldset form__mail">
                             <label class="form__user" for="mail">Адрес почты
                             </label>
                             <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту">
@@ -100,16 +107,16 @@
                         <legend class="form__choice">С каким приложением путешествовали?</legend>
                         <ul class="form__radio-itemst">
                             <li class="form__radio-item">
-                                <input class="form__options" type="radio" name="ios" id="ios">
-                                <label class="form__adventure" for="ios">Pink для iOS</label>
+
+                                <label class="form__adventure" for="ios"> <input class="form__options" type="radio" name="ios" id="ios"><span class="radio_indicator"></span>Pink для iOS</label>
                             </li>
                             <li class="form__radio-item">
-                                <input class="form__options" type="radio" name="android" id="android">
-                                <label class="form__adventure" for="android">Pink на Android</label>
+
+                                <label class="form__adventure" for="android"> <input class="form__options" type="radio" name="android" id="android"><span class="radio_indicator"></span>Pink на Android</label>
                             </li>
                             <li class="form__radio-item">
-                                <input class="form__options" type="radio" name="windows" id="windows">
-                                <label class="form__adventure" for="windows">Windows Phone</label>
+
+                                <label class="form__adventure" for="windows"> <input class="form__options" type="radio" name="windows" id="windows"><span class="radio_indicator"></span>Windows Phone</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -121,7 +128,7 @@
                     </fieldset>
                     <div class="form__sending">
                         <button class="form__button btn" type="submit">Отправить форму</button>
-                        <span class="form__button-span">* &mdash; Обязательные поля</span>
+                        <span class="form__button-span"><b>*</b> &mdash; Обязательные поля</span>
                     </div>
                 </form>
             </div>
@@ -129,7 +136,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__logo">
-                    <img  src="http://placehold.it/150x100" alt="logo">
+                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>
@@ -138,12 +145,11 @@
                 </div>
                 <div class="footer__copyright">
                     <span>Разработано</span>
-                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"></a>
+                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"><img src="img/logo-htmlacademy.svg" alt="logo academy"></a>
                 </div>
             </div>
         </footer>
     </main>
 </body>
+
 </html>
-
-
