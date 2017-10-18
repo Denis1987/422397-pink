@@ -8,14 +8,13 @@
     color: @white;
 }
 
-.header__menu {
-    padding-bottom: 395px;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-
-}
-
+//.header__menu {
+//
+//    background-image: url(../img/bg-back-mobile@1x.jpg);
+//    background-position: center 256px;
+//    background-repeat: no-repeat;
+//
+//}
 .header__headline h1 {
     font-size: 24px;
     line-height: 29px;
@@ -23,11 +22,22 @@
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    @media @mobile {}
+    @media @tablet {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @media @desktop {}
+
 }
 
 .header__headline {
     margin-bottom: 54px;
-
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 79px;
+    }
+    @media @desktop {}
 
 }
 
@@ -39,18 +49,19 @@
     position: relative;
 }
 
-.header__menu--index:after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/iphone-hand-mobile@1x.png);
-    width: 258px;
-    height: 286px;
-    display: block;
-    bottom: 0;
-}
-
+//.header__menu:after {
+//    position: absolute;
+//    content: '';
+//    background-image: url(../img/iphone-hand-mobile@1x.png);
+//    width: 258px;
+//    height: 286px;
+//    display: block;
+//    bottom: 242px;
+//}
 .header__nav {
     border-top: 1px solid #000;
+    display: none;
+
 }
 
 .header a {
@@ -97,14 +108,24 @@
 .header__logo {
     width: 75px;
     height: 23px;
+    background-image: url(../img/logo-pink-white-mobile.svg);
+    display: block;
+    background-repeat: no-repeat;
 }
 
 .header__logtog {
     padding-top: 22px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     position: relative;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 44px;
+        padding-bottom: 42px;
+    }
+    @media @desktop {}
+
 }
 
 .header__toggler {
@@ -123,6 +144,22 @@
 
 .header--form .header__headline {
     padding-top: 13px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 35px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery .main__subtitle {
+    @media @mobile {}
+    @media @tablet {
+        padding: 0px 40px;
+        margin-bottom: 76px;
+    }
+    @media @desktop {}
+
 }
 
 .header--form .header__menu--form {
@@ -132,9 +169,33 @@
 
 .header--photo .header__headline {
     padding-top: 12px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 35px;
+        margin-bottom: 110px;
+    }
+    @media @desktop {}
+
 }
 
 .header--photo .header__menu {
     padding-bottom: 30px;
     background-position: center 256px;
 }
+
+.header__nav-show {
+    display: block;
+}
+
+.gallery {
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 78px;
+    }
+    @media @desktop {}
+
+}
+
+//при клике на header__logtog 
+//header__nav добавляем класс 
+//.header__nav-show

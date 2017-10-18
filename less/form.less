@@ -6,7 +6,21 @@
     font-weight: lighter;
     letter-spacing: 0.3px;
     color: @dark_blue;
+    display: block;
     margin-bottom: 34px;
+    @media @mobile {}
+    @media @tablet {
+        line-height: 30px;
+        font-size: 18px;
+        padding: 0px 50px;
+        margin-bottom: 0;
+        width: 620px;
+        margin-right: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media @desktop {}
+
 }
 
 .form__fieldset {
@@ -15,6 +29,17 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 18px;
+    @media @mobile {}
+    @media @tablet {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-bottom: 48px;
+    }
+    @media @desktop {}
+
 }
 
 .form__user {
@@ -23,6 +48,14 @@
     line-height: 30px;
     padding-left: 22px;
     display: block;
+    @media @mobile {}
+    @media @tablet {
+        padding-left: 0;
+        width: auto;
+        padding-right: 20px;
+        padding-top: 11px;
+    }
+    @media @desktop {}
 
 }
 
@@ -45,12 +78,29 @@
     margin-bottom: 18px;
     display: block;
     text-align: center;
-    width: 100%;
+
+    @media @mobile {
+        width: 100%;
+    }
+    @media @tablet {
+        width: auto;
+        padding: 0 40px;
+    }
+    @media @desktop {}
+
 }
 
 .form__checkbox .form__choice {
     background-color: @grey;
     padding-top: 38px;
+    @media @mobile {}
+    @media @tablet {
+        background-color: inherit;
+        padding: 0;
+        margin: 0;
+    }
+    @media @desktop {}
+
 }
 
 .form__adventure {
@@ -74,6 +124,12 @@
 .form__radio,
 .form__radio .form__choice {
     background-color: @grey;
+    @media @mobile {}
+    @media @tablet {
+        background-color: inherit;
+    }
+    @media @desktop {}
+
 }
 
 .form__adventure {
@@ -102,23 +158,65 @@
     //    background-image: url(../img/svg-device/checkbox-on.svg);
 }
 
-//.form__common .form__checkbox {
-//}
+.form__common .form__checkbox {
+    @media @mobile {}
+    @media @tablet {
+        order: 3;
+        border: 2px solid @grey;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 55px;
+    }
+    @media @desktop {}
+
+}
+
 .form__ul {
     margin-bottom: 6px;
 }
 
 .form__common .form__contacts {
     padding-top: 10px;
+    @media @mobile {}
+    @media @tablet {
+        order: 2;
+        border: 2px solid @grey;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 38px;
+        margin-bottom: 57px;
+    }
+    @media @desktop {}
+
 }
 
 .form__common .form__textarea {
     margin-bottom: 42px;
+    @media @mobile {}
+    @media @tablet {
+        order: 4;
+        border: 2px solid @grey;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 66px;
+    }
+    @media @desktop {}
+
 }
 
 .form__radio .form__choice {
     padding-top: 40px;
     margin-bottom: 24px;
+    @media @mobile {}
+    @media @tablet {
+        display: block;
+        padding: 0 20px;
+    }
+    @media @desktop {}
+
 }
 
 .form__adventure {
@@ -153,12 +251,34 @@
 .form__common .form__radio {
     padding-bottom: 2px;
     margin-bottom: 39px;
+    @media @mobile {}
+    @media @tablet {
+        order: 1;
+        border: 2px solid @grey;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 54px;
+    }
+    @media @desktop {}
+
 }
 
 
 .form__textarea-center {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.form__common {
+    @media @mobile {}
+    @media @tablet {
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+    }
+    @media @desktop {}
+
 }
 
 .form__field {
@@ -181,6 +301,13 @@
     text-transform: uppercase;
     background: #2aab6d;
     margin-bottom: 36px;
+    @media @mobile {}
+    @media @tablet {
+        width: 300px;
+        margin: 0;
+    }
+    @media @desktop {}
+
 }
 
 .form__button-span b {
@@ -195,4 +322,184 @@
     text-align: center;
     display: inline-block;
     vertical-align: top;
+    @media @mobile {}
+    @media @tablet {
+        width: 178px;
+    }
+    @media @desktop {}
+
+}
+
+.form .container {
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 44px;
+    }
+    @media @desktop {}
+
+}
+
+.form__common .form__name {
+    @media @mobile {}
+    @media @tablet {
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+        order: 0;
+        margin-bottom: 12px;
+    }
+    @media @desktop {}
+
+}
+
+.form__sending {
+    @media @mobile {}
+    @media @tablet {
+        order: 5;
+        display: flex;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+
+    }
+    @media @desktop {}
+
+}
+
+.form__radio-itemst {
+    padding-top: 9px;
+    padding-left: 108px;
+    padding-bottom: 1px;
+}
+
+.form__contacts .form__fieldset {
+    @media @mobile {}
+    @media @tablet {
+        flex-direction: column;
+    }
+    @media @desktop {}
+
+}
+
+.form__contacts .form__choice {
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 32px;
+    }
+    @media @desktop {}
+
+}
+
+.form__phone .form__text,
+.form__mail .form__text {
+    @media @mobile {}
+    @media @tablet {
+        order: 0;
+    }
+    @media @desktop {}
+
+}
+
+.form__phone .form__user,
+.form__mail .form__user {
+    @media @mobile {}
+    @media @tablet {
+        order: 1;
+        padding-left: 19px;
+    }
+    @media @desktop {}
+
+}
+
+.form__phone {
+
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 15px;
+    }
+    @media @desktop {}
+
+}
+
+.form__mail {
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 10px;
+        margin-bottom: 25px;
+    }
+    @media @desktop {}
+
+}
+
+.form__checkbox .form__choice {
+    @media @mobile {}
+    @media @tablet {
+        letter-spacing: 0.3px;
+        padding: 0 40px;
+    }
+    @media @desktop {}
+
+}
+
+.form__checkbox .form__ul {
+    @media @mobile {}
+    @media @tablet {
+        padding: 24px 0px 7px 101px;
+    }
+    @media @desktop {}
+
+}
+
+.form__textarea-center .form__field {
+    @media @mobile {}
+    @media @tablet {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 21px;
+        /* color: #283645; */
+        /* margin: 0 auto; */
+        height: 190px;
+        padding-top: 16px;
+        display: block;
+        resize: none;
+        margin-top: 20px;
+        margin-bottom: 54px;
+        letter-spacing: 0.px;
+        font-family: 'Open Sans';
+        letter-spacing: 0.4px;
+    }
+    @media @desktop {}
+
+}
+
+.form__sending .form__button-span {
+    @media @mobile {}
+    @media @tablet {
+        width: 183px;
+        padding-top: 19px;
+        letter-spacing: 0.3px;
+    }
+    @media @desktop {}
+
+}
+
+.form__name .form__user {
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 23px;
+    }
+    @media @desktop {}
+}
+
+.form {
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 58px;
+    }
+    @media @desktop {}
+
 }

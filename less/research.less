@@ -1,0 +1,49 @@
+.research {
+    display: none;
+    @media @mobile {}
+    @media @tablet {
+        display: block;
+        margin-bottom: 55px;
+    }
+    @media @desktop {}
+
+}
+
+.research .container {
+    padding: 0 10px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.research__block {
+    width: 320px;
+    margin-top: 45px;
+    margin-bottom: 27px;
+}
+
+.research__headline {
+    line-height: 36px;
+    font-size: 30px;
+    padding-right: 25px;
+    margin-bottom: 11px;
+}
+
+.research__text {
+    line-height: 24px;
+    font-size: 14px;
+    color: @dark_blue;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.research__block .research__link {
+    text-decoration: underline;
+    color: @cherry;
+    line-height: 24px;
+    font-size: 14px;
+}
