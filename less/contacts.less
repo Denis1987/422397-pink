@@ -30,7 +30,10 @@
         display: block;
         line-height: 48px;
     }
-    @media @desktop {}
+    @media @desktop {
+        font-size: 50px;
+        line-height: 50px;
+    }
 
 }
 
@@ -110,6 +113,14 @@
 
 }
 
+.contacts__item {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 33.33%;
+    }
+
+}
 
 .contacts__item--phone {
     margin-bottom: 24px;
@@ -117,6 +128,12 @@
 
 .contacts__item--mail {
     margin-bottom: 29px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 1;
+    }
+
 }
 
 .contacts__map {
@@ -173,5 +190,18 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {}
+
+}
+
+.contacts .container {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 969px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 }

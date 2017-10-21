@@ -1,6 +1,16 @@
 .gallery .container {
     padding-right: 20px;
     padding-left: 20px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 .gallery {
@@ -57,7 +67,9 @@
         margin-bottom: 75px;
         padding: 0px 40px;
     }
-    @media @desktop {}
+    @media @desktop {
+        width: 650px;
+    }
 
 }
 
@@ -67,6 +79,7 @@
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 19px;
+
     @media @mobile {}
     @media @tablet {
         padding: 12px 28px;
@@ -114,7 +127,9 @@
         margin-right: auto;
         margin-bottom: 51px;
     }
-    @media @desktop {}
+    @media @desktop {
+        width: 100%;
+    }
 
 }
 
@@ -229,7 +244,10 @@
         width: 660px;
         padding-top: 29px;
     }
-    @media @desktop {}
+    @media @desktop {
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 }
 

@@ -16,6 +16,16 @@
 .reviews .container {
     padding-right: 20px;
     padding-left: 20px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
 
 .reviews__item {
@@ -46,7 +56,11 @@
         line-height: 30px;
         color: @dark_blue;
     }
-    @media @desktop {}
+    @media @desktop {
+        margin-right: auto;
+        margin-left: auto;
+        width: 683px;
+    }
 
 }
 
