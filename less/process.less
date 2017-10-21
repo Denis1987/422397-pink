@@ -1,16 +1,39 @@
 .process .container {
     padding: 0 18px;
+    @media @mobile {}
+    @media @tablet {
+        padding: 0px 20px;
+    }
+    @media @desktop {}
+
 }
 
 .process {
     background-color: @grey;
     width: 320px;
+    @media @mobile {}
+    @media @tablet {
+        width: 660px;
+    }
+    @media @desktop {}
+
 }
 
 .process__form {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
+    @media @mobile {}
+    @media @tablet {
+        width: 660px;
+        margin-left: auto;
+        padding-top: 57px;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media @desktop {}
+
 }
 
 .process__range-btn {
@@ -20,6 +43,16 @@
     padding: 0 35px;
     margin-top: 36px;
     margin-bottom: 37px;
+    @media @mobile {}
+    @media @tablet {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+    @media @desktop {}
+
 }
 
 .process__btn-frame {
@@ -36,17 +69,35 @@
 
     width: 280px;
     position: relative;
-
+    @media @mobile {}
+    @media @tablet {
+        padding: 22px 0px 22px 0px;
+    }
+    @media @desktop {}
 
 }
 
 .process__frame,
 .process__casting {
     display: none;
+    @media @mobile {}
+    @media @tablet {
+        display: block;
+    }
+    @media @desktop {}
+
 }
 
 .process__ranges {
     margin-bottom: 74px;
+    @media @mobile {}
+    @media @tablet {
+        width: 240px;
+        padding-left: 20px;
+        padding-right: 28px;
+    }
+    @media @desktop {}
+
 }
 
 .process__scale {
@@ -97,5 +148,17 @@
 .process__reset {
     color: @dark_grey;
     box-shadow: inset 0 0 0 3px @dark_grey;
+
+}
+
+.process__settings {
+    @media @mobile {}
+    @media @tablet {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        outline: 1px red solid;
+    }
+    @media @desktop {}
 
 }
