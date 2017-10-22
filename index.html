@@ -11,10 +11,13 @@
 <body>
 
     <header class="header">
-        <div class="container">
-            <div class="header__menu header__menu--index">
+
+
+
+        <div class="header__menu header__menu--index">
+            <div class="container">
                 <div class="header__logtog">
-                    <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
+                    <a class="header__logo"></a>
                     <a class="header__toggler"></a>
                 </div>
                 <nav class="header__nav">
@@ -29,46 +32,69 @@
                             <a class="header__link" href="form.html">Конкурс</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="https://htmlacademy.ru/">html academy</a>
+                            <a class="header__link" href="https://htmlacademy.ru/">HTML Academy</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="header__headline header__headline--index"></div>
-            <h1 class="visually-hidden">Мобильное приложение pink</h1>
-            <div class="download">
-                <a href="#" class="download__link download__link--first">Скачать приложение</a>
-                <div class="download__store">
-                    <a class="download__link download__link--apple" href="#"></a>
-                    <a class="download__link download__link--android" href="#"></a>
-                    <a class="download__link download__link--win" href="#"></a>
+        </div>
+        <div class="container">
+            <div class="download__container">
+                <div class="download">
+                    <h1 class="visually-hidden">Мобильное приложение pink</h1>
+                    <span class="download__promo">Взгляните
+                            на жизнь
+                            иначе!</span>
+                    <a href="#" class="download__link download__link--first">Скачать приложение</a>
+                    <div class="download__store">
+                        <a class="download__link download__link--apple" href="#"></a>
+                        <a class="download__link download__link--android" href="#"></a>
+                        <a class="download__link download__link--win" href="#"></a>
+                    </div>
+                    <p class="download__choice">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
                 </div>
-                <p class="download__choice">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
+
+
+
+
         </div>
     </header>
     <main class="main">
         <section class="advantages">
-            <div class="container">
-                <div class="advantages__slogan">
+
+            <div class="advantages__slogan">
+                <div class="container">
                     <span class="advantages__promo">Устали от серости мегаполиса?</span>
-                    <span class="advantages__promo">Нам есть, что вам
-                    предложить!</span>
+                    <span class="advantages__promo">Нам есть, что вам предложить!</span>
                 </div>
-                <div class="advantages__item">
-                    <h2 class="advantages__headline">Поднимает настроение
-                    </h2>
-                    <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantage__block">
+                <div class="container">
+                    <div class="advantages__item advantages__item--first">
+                        <h2 class="advantages__headline">Поднимает настроение
+                        </h2>
+                        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </div>
+                    <div class="advantages__item">
+                        <h2 class="advantages__headline">Меняет мир вокруг
+                        </h2>
+                        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </div>
+                    <div class="advantages__item">
+                        <h2 class="advantages__headline">Заводит новых друзей
+                        </h2>
+                        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </div>
                 </div>
-                <div class="advantages__item">
-                    <h2 class="advantages__headline">Меняет мир вокруг
-                    </h2>
-                    <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </div>
-                <div class="advantages__item">
-                    <h2 class="advantages__headline">Заводит новых друзей
-                    </h2>
-                    <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+        </section>
+        <section class="research">
+            <div class="container">
+                <div class="research__block">
+                    <h3 class="research__headline">Эффект на&#160;24&#160;часа!</h3>
+                    <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <a href="#" class="research__link">Узнать больше об исследовании</a>
                 </div>
             </div>
         </section>
@@ -76,7 +102,10 @@
             <div class="container">
                 <h2 class="visually-hidden">Отзывы</h2>
                 <div class="reviews__item">
-                    <h3 class="reviews__name">Николай Петров</h3>
+                    <div class="reviews__name">
+                        <h3>Николай Петров</h3>
+                        <span>25 лет, водитель трамвая</span>
+                    </div>
                     <blockquote>&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</blockquote>
                 </div>
                 <!--
@@ -105,35 +134,37 @@
         <section class="options">
             <div class="container">
                 <div class="options__rates">
-                    <!--
-                    <div class="options__package">
-                        <div class="options__item--headline"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
+
+                    <div class="options__package options__package--first">
+                        <div class="options__item--headline options__item--headline--first"></div>
+                        <div class="options__item options__first-item">Розовый фильтр</div>
+                        <div class="options__item options__first-item">Смайлики</div>
+                        <div class="options__item options__first-item">Комментарии</div>
                     </div>
                     <div class="options__package">
-                        <div class="options__item--headline"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
+                        <div class="options__item--headline"><span class="options__price">База</span>
+                            <span class="options__price options__price--usd">1,99 USD</span></div>
+                        <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
+                        <div class="options__item options__item--no"><span>Смайлики</span></div>
+                        <div class="options__item options__item--no"><span>Комментарии</span> </div>
                     </div>
--->
+
                     <div class="options__package">
-                        <div class="options__item--headline"><span class="options__price">Стандарт</span>
+                        <div class="options__item--headline options__item--headline--hit"><span class="options__price">Стандарт</span>
                             <span class="options__price options__price--usd">3,99 USD</span></div>
-                        <div class="options__item options__item--yes">Розовый фильтр</div>
-                        <div class="options__item options__item--yes">Смайлики</div>
-                        <div class="options__item options__item--no">Комментарии</div>
+                        <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
+                        <div class="options__item options__item--yes"><span>Смайлики</span></div>
+
+                        <div class="options__item options__item--no"><span>Комментарии</span>
+                        </div>
                     </div>
-                    <!--
                     <div class="options__package">
-                        <div class="options__item--headline"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
-                        <div class="options__item"></div>
+                        <div class="options__item--headline"><span class="options__price">Анлим</span>
+                            <span class="options__price options__price--usd">9,99 USD</span></div>
+                        <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
+                        <div class="options__item options__item--yes"><span>Смайлики</span></div>
+                        <div class="options__item options__item--yes"><span>Комментарии</span></div>
                     </div>
--->
                 </div>
                 <ul class="slider-controls">
                     <li>
@@ -170,12 +201,31 @@
                         Конюшенная, 19/8</a>
                     </div>
                 </div>
-                <a class="contacts__map" href="map.html">
-                    <img src="http://placehold.it/150x100" alt="map">
-                </a>
             </div>
+            <div class="contacts__map">
+                <img src="http://placehold.it/150x100" alt="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2376.7636357991264!2d30.319835698735726!3d59.93857986060224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zINGD0LsuINCR0L7Qu9GM0YjQsNGPINCa0L7QvdGO0YjQtdC90L3QsNGPLCAxOS84!5e0!3m2!1sru!2sru!4v1508087781924" width="600" height="200" style="border:0" allowfullscreen></iframe>
+            </div>
+
         </section>
+        <footer class="footer footer__index">
+            <div class="container">
+                <div class="footer__logo">
+                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+                </div>
+                <div class="footer__social">
+                    <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>
+                    <a class="social_link footer__facebook" href="#" aria-label="facebook page"><span class="visually-hidden">facebook</span></a>
+                    <a class="social_link footer__youtube" href="#" aria-label="youtube page"><span class="visually-hidden">youtube</span></a>
+                </div>
+                <div class="footer__copyright">
+                    <span>Разработано</span>
+                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"><img src="img/logo-htmlacademy.svg" alt="logo academy"></a>
+                </div>
+            </div>
+        </footer>
     </main>
+    <script src="js/javaScript.js"></script>
 </body>
 
 </html>

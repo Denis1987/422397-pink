@@ -10,8 +10,9 @@
 
 <body>
     <header class="header header--form">
-        <div class="container">
-            <div class="header__menu header__menu--form">
+
+        <div class="header__menu header__menu--form">
+            <div class="container">
                 <div class="header__logtog">
                     <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
                     <a class="header__toggler"></a>
@@ -32,17 +33,23 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__headline">
-                    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-                </div>
             </div>
-
         </div>
+        <div class="container">
+            <div class="header__headline">
+                <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
+        </div>
+
+
+
     </header>
     <main class="main">
         <section class="form">
             <div class="container">
-                <h2 class="main__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+                <div class="form__first-block">
+                    <h2 class="main__subtitle main__subtitle--mob-tab">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+                    <span class="main__subtitle main__subtitle--desktop">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</span></div>
                 <form class="form__common" action="https://echo.htmlacademy.ru">
                     <fieldset class="form__name">
                         <div class="form__fieldset">
@@ -92,15 +99,18 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__contacts">
-                        <div class="form__fieldset form__phone">
-                            <label class="form__user" for="phone">Номер телефона
+                        <legend class="form__choice">контактная информация</legend>
+                        <div class="form__flex-block">
+                            <div class="form__fieldset form__phone">
+                                <label class="form__user" for="phone">Номер телефона
                             </label>
-                            <input class="form__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-                        </div>
-                        <div class="form__fieldset form__mail">
-                            <label class="form__user" for="mail">Адрес почты
+                                <input class="form__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                            </div>
+                            <div class="form__fieldset form__mail">
+                                <label class="form__user" for="mail">Адрес почты
                             </label>
-                            <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту">
+                                <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту">
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="form__radio">
@@ -128,7 +138,8 @@
                     </fieldset>
                     <div class="form__sending">
                         <button class="form__button btn" type="submit">Отправить форму</button>
-                        <span class="form__button-span"><b>*</b> &mdash; Обязательные поля</span>
+                        <span class="form__button-span form__button-span--mob-tab"><b>*</b> &mdash; Обязательные поля</span>
+                        <span class="form__button-span form__button-span--desktop"><b>*</b> &mdash; Обязательные для заполнения поля</span>
                     </div>
                 </form>
             </div>
@@ -150,6 +161,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/javaScript.js"></script>
 </body>
 
 </html>

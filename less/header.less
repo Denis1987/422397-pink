@@ -8,14 +8,13 @@
     color: @white;
 }
 
-.header__menu {
-    padding-bottom: 395px;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-
-}
-
+//.header__menu {
+//
+//    background-image: url(../img/bg-back-mobile@1x.jpg);
+//    background-position: center 256px;
+//    background-repeat: no-repeat;
+//
+//}
 .header__headline h1 {
     font-size: 24px;
     line-height: 29px;
@@ -23,11 +22,22 @@
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    @media @mobile {}
+    @media @tablet {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @media @desktop {}
+
 }
 
 .header__headline {
     margin-bottom: 54px;
-
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 79px;
+    }
+    @media @desktop {}
 
 }
 
@@ -39,18 +49,26 @@
     position: relative;
 }
 
-.header__menu--index:after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/iphone-hand-mobile@1x.png);
-    width: 258px;
-    height: 286px;
-    display: block;
-    bottom: 0;
-}
-
+//.header__menu:after {
+//    position: absolute;
+//    content: '';
+//    background-image: url(../img/iphone-hand-mobile@1x.png);
+//    width: 258px;
+//    height: 286px;
+//    display: block;
+//    bottom: 242px;
+//}
 .header__nav {
     border-top: 1px solid #000;
+    display: none;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        display: block;
+        width: 810px;
+        border: none;
+    }
+
 }
 
 .header a {
@@ -65,6 +83,21 @@
 .header__logtog {
 
     background-color: rgba(28, 37, 48, 0.5);
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        background: none;
+    }
+
+}
+
+.header__menu {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        background-color: rgba(28, 37, 48, 0.5);
+    }
+
 }
 
 .download__choice {
@@ -76,12 +109,29 @@
     padding: 0;
     margin: 0;
     background-color: @dark_blue;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        background: none;
+    }
 
 }
 
 .header__item {
     border-bottom: 1px solid #000;
     border-top: 1px solid #485461;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 25%;
+        border: none;
+    }
+
 }
 
 .header__link {
@@ -91,20 +141,40 @@
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 15px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        font-weight: normal;
+        text-transform: inherit;
+        padding-top: 35px;
+        padding-bottom: 39px;
+    }
 
 }
 
 .header__logo {
     width: 75px;
     height: 23px;
+    background-image: url(../img/logo-pink-white-mobile.svg);
+    display: block;
+    background-repeat: no-repeat;
 }
 
 .header__logtog {
     padding-top: 22px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     position: relative;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 44px;
+        padding-bottom: 42px;
+    }
+    @media @desktop {
+        width: 150px;
+    }
+
 }
 
 .header__toggler {
@@ -117,12 +187,43 @@
     z-index: 2;
     right: 20px;
     background-image: url(../img/icon-menu-burger.svg);
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        display: none;
+    }
+
 }
 
+.header .container {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+}
 
 .header--form .header__headline {
     padding-top: 13px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 35px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery .main__subtitle {
+    @media @mobile {}
+    @media @tablet {
+        padding: 0px 40px;
+        margin-bottom: 76px;
+    }
+    @media @desktop {}
+
 }
 
 .header--form .header__menu--form {
@@ -132,9 +233,71 @@
 
 .header--photo .header__headline {
     padding-top: 12px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 35px;
+        margin-bottom: 110px;
+    }
+    @media @desktop {
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
 }
 
 .header--photo .header__menu {
     padding-bottom: 30px;
     background-position: center 256px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {}
+
 }
+
+.header__menu .container {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-left: auto;
+        width: 960px;
+        margin-right: auto;
+    }
+
+}
+
+.header--photo .header--photo {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+.header__nav-show {
+    display: block;
+}
+
+.gallery {
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 78px;
+    }
+    @media @desktop {}
+
+}
+
+//при клике на header__logtog 
+//header__nav добавляем класс 
+//.header__nav-show

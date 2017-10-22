@@ -1,10 +1,27 @@
 .gallery .container {
     padding-right: 20px;
     padding-left: 20px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 .gallery {
     padding-top: 33px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 78px;
+        margin-bottom: 28px;
+    }
+    @media @desktop {}
+
 }
 
 .gallery__panorama {
@@ -13,6 +30,12 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    @media @mobile {}
+    @media @tablet {
+        height: 510px;
+    }
+    @media @desktop {}
+
 }
 
 .gallery__panorama img {
@@ -39,10 +62,39 @@
 .gallery .main__subtitle {
     margin-bottom: 49px;
     padding: 0px 15px;
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: 75px;
+        padding: 0px 40px;
+    }
+    @media @desktop {
+        width: 650px;
+    }
+
 }
+
 
 .gallery__user-comment {
     background-color: @grey;
+    padding-top: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 19px;
+
+    @media @mobile {}
+    @media @tablet {
+        padding: 12px 28px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @media @desktop {}
+
 }
 
 .gallery__user {
@@ -69,6 +121,17 @@
 
 .gallery__article--first {
     margin-bottom: 19px;
+    @media @mobile {}
+    @media @tablet {
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 51px;
+    }
+    @media @desktop {
+        width: 100%;
+    }
+
 }
 
 .gallery__article .container {
@@ -95,15 +158,10 @@
 
 }
 
-.gallery__user-comment {
-    padding-top: 6px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 19px;
-}
 
 .gallery__article--first .gallery__info {
     margin-bottom: 10px;
+
 }
 
 
@@ -114,6 +172,12 @@
     line-height: 24px;
 
     margin-bottom: 9px;
+    @media @mobile {}
+    @media @tablet {
+        width: 100%;
+    }
+    @media @desktop {}
+
 }
 
 .gallery__rating {
@@ -132,6 +196,22 @@
 
 .gallery__photo {
     height: 180px;
+    @media @mobile {}
+    @media @tablet {
+        height: 300px;
+        width: 300px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__img {
+    @media @mobile {}
+    @media @tablet {
+        height: 300px;
+        width: 300px;
+    }
+    @media @desktop {}
 }
 
 .gallery__article:nth-child(3) .gallery__info,
@@ -159,4 +239,190 @@
     letter-spacing: 0.4px;
     width: 280px;
     margin-bottom: 41px;
+    @media @mobile {}
+    @media @tablet {
+        font-size: 18px;
+        width: 660px;
+        padding-top: 29px;
+    }
+    @media @desktop {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+.gallery__panorama-img {
+    @media @mobile {}
+    @media @tablet {
+        //        height: 510px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__article--first .gallery__user--first {
+    @media @mobile {}
+    @media @tablet {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 28px;
+        padding-top: 24px;
+        padding-bottom: 12px;
+        flex-direction: row;
+    }
+
+    @media @desktop {}
+
+}
+
+.gallery__user--first .gallery__user {
+    @media @mobile {}
+    @media @tablet {
+        margin-top: 0;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__user--first .gallery__info {
+    @media @mobile {}
+    @media @tablet {
+        order: 3;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__user--first .gallery__rating {
+    @media @mobile {}
+    @media @tablet {
+        order: 2;
+        margin-top: 6px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__user--first .gallery__likes {
+    @media @mobile {}
+    @media @tablet {
+        order: 1;
+        margin-left: auto;
+        margin-right: 17px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big {
+    @media @mobile {}
+    @media @tablet {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 660px;
+        padding: 0px 20px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: stretch;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__article {
+    @media @mobile {}
+    @media @tablet {
+        width: 300px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__user-comment {
+    @media @mobile {}
+    @media @tablet {
+
+
+
+        padding: 25px 30px 23px 27px;
+        min-height: 155px;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        align-content: flex-end;
+
+        flex-basis: 100%;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__user {
+    @media @mobile {}
+    @media @tablet {
+        margin: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__rating {
+    @media @mobile {}
+    @media @tablet {
+        order: 1;
+        margin: auto 2px 6px auto;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__likes {
+    @media @mobile {}
+    @media @tablet {
+        margin: 0; //        margin-top: auto;
+    }
+    @media @desktop {}
+
+}
+
+.gallery__container--big .gallery__info {
+    @media @mobile {}
+    @media @tablet {
+        margin-bottom: auto;
+        margin: 0 0 10px;
+        display: block;
+
+    }
+    @media @desktop {}
+
+}
+
+.gallery__rating-likes {
+    @media @mobile {}
+    @media @tablet {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-top: auto;
+    }
+    @media @desktop {}
+
 }
