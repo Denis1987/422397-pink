@@ -14,7 +14,7 @@
         <div class="header__menu header__menu--form">
             <div class="container">
                 <div class="header__logtog">
-                    <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
+                    <a class="header__logo"></a>
                     <a class="header__toggler"></a>
                 </div>
                 <nav class="header__nav">
@@ -26,7 +26,7 @@
                             <a class="header__link" href="photo.html">Фотографии</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Конкурс</a>
+                            <a class="header__link header__link--here" href="#">Конкурс</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="https://htmlacademy.ru/">html academy</a>
@@ -104,12 +104,12 @@
                             <div class="form__fieldset form__phone">
                                 <label class="form__user" for="phone">Номер телефона
                             </label>
-                                <input class="form__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                                <input class="form__text" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста*">
                             </div>
                             <div class="form__fieldset form__mail">
                                 <label class="form__user" for="mail">Адрес почты
                             </label>
-                                <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту">
+                                <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту*">
                             </div>
                         </div>
                     </fieldset>
@@ -126,7 +126,7 @@
                             </li>
                             <li class="form__radio-item">
 
-                                <label class="form__adventure" for="windows"> <input class="form__options" type="radio" name="windows" id="windows"><span class="radio_indicator"></span>Windows Phone</label>
+                                <label class="form__adventure" for="windows"> <input class="form__options " type="radio" name="windows" id="windows"><span class="radio_indicator"></span>Windows Phone</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -147,7 +147,9 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__logo">
-                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+                    <a href="index.html">
+                        <img src="img/logo-pink-blue-desktop.svg" alt="logo">
+                    </a>
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>

@@ -6,7 +6,9 @@
         padding-top: 26px;
         padding-bottom: 0;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 70px;
+    }
 
 }
 
@@ -22,7 +24,16 @@
         display: flex;
         justify-content: space-between;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-right: 1px;
+        padding-left: 20px;
+
+        display: flex;
+
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
@@ -66,6 +77,16 @@
     background-image: url(../img/icon-youtube.svg);
 }
 
+.footer__youtube:hover {
+    background-image: url(../img/icon-youtube-hover.svg);
+}
+
+.footer__youtube:active {
+    background-image: url(../img/icon-youtube-hover.svg);
+    opacity: .3;
+}
+
+
 .footer__copyright {
     display: -webkit-flex;
     display: -moz-flex;
@@ -99,15 +120,81 @@
     font-size: 14px;
     padding-top: 6px;
     color: @dark_blue;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
 }
 
 .footer__academy {
     margin-left: 17px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        margin-left: 15px;
+    }
+
+}
+
+.academy-logo__hover {
+    display: none;
+}
+
+.footer__academy:hover {
+    @media @mobile {}
+    @media @tablet {
+        .academy-logo__hover {
+            display: block;
+        }
+        .academy-logo {
+            display: none;
+        }
+    }
+    @media @desktop {
+        .academy-logo__hover {
+            display: block;
+        }
+        .academy-logo {
+            display: none;
+        }
+    }
+
+}
+
+.footer__academy:active {
+    @media @mobile {}
+    @media @tablet {
+        .academy-logo__hover {
+            display: block;
+            opacity: .3;
+        }
+        .academy-logo {
+            display: none;
+        }
+    }
+    @media @desktop {
+        .academy-logo__hover {
+            display: block;
+            opacity: .3;
+        }
+        .academy-logo {
+            display: none;
+        }
+    }
 
 }
 
 .footer--photo {
     padding-top: 41px;
+    @media @mobile {}
+    @media @tablet {
+        padding-top: 32px;
+    }
+    @media @desktop {}
+
 }
 
 .footer__index {

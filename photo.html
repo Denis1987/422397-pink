@@ -14,7 +14,7 @@
         <div class="header__menu">
             <div class="container">
                 <div class="header__logtog">
-                    <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
+                    <a class="header__logo"></a>
                     <a class="header__toggler"></a>
                 </div>
                 <nav class="header__nav">
@@ -23,7 +23,7 @@
                             <a class="header__link" href="index.html">Главная</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Фотографии</a>
+                            <a class="header__link header__link--here" href="#">Фотографии</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="form.html">Конкурс</a>
@@ -52,7 +52,16 @@
 
                 <div class="gallery__panorama">
                     <span class="gallery__span">панорама дня</span>
-                    <img class="gallery__panorama-img" src="img/panorama-mobile@1x.jpg">
+                    <!--                    <img class="gallery__panorama-img" src="img/panorama-mobile@1x.jpg">-->
+
+
+
+
+                    <img class="gallery__panorama-img img-mob" src="img/panorama-mobile@1x.jpg">
+                    <img class="gallery__panorama-img img-tab" src="img/panorama-tablet@2x.jpg">
+                    <img class="gallery__panorama-img img-des" src="img/panorama-desktop@1x.jpg">
+
+
                 </div>
                 <div class="container">
                     <div class="gallery__user-comment gallery__user--first">
@@ -66,7 +75,9 @@
             <div class="container gallery__container--big">
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-car-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-car-mobile@1x.jpg">
+                        <img class="gallery__img img-tab" src="img/photo-car-tablet@2x.jpg">
+                        <img class="gallery__img img-des" src="img/photo-car-desktop@2x.jpg">
                     </div>
                     <div class="gallery__user-comment">
 
@@ -80,7 +91,10 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-drumset-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-drumset-mobile@1x.jpg">
+                        <img class="gallery__img img-tab" src="img/photo-drumset-tablet@2x.jpg">
+                        <img class="gallery__img img-des" src="img/photo-drumset-desktop@2x.jpg">
+
                     </div>
                     <div class="gallery__user-comment">
 
@@ -97,7 +111,9 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-window-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-window-mobile@1x.jpg">
+                        <img class="gallery__img img-tab" src="img/photo-window-tablet@2x.jpg">
+                        <img class="gallery__img img-des " src="img/photo-window-desktop@2x.jpg">
                     </div>
                     <div class="gallery__user-comment">
 
@@ -111,7 +127,9 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-fair-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-fair-mobile@1x.jpg">
+                        <img class="gallery__img img-tab" src="img/photo-fair-tablet@2x.jpg">
+                        <img class="gallery__img img-des" src="img/photo-fair-desktop@2x.jpg">
                     </div>
                     <div class="gallery__user-comment">
 
@@ -126,7 +144,9 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-pov-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-pov-mobile@1x.jpg">
+                        <img class="gallery__img img-tab" src="img/photo-pov-tablet@2x.jpg">
+                        <img class="gallery__img img-des" src="img/photo-pov-desktop@1x.jpg">
 
                     </div>
                     <div class="gallery__user-comment">
@@ -141,7 +161,9 @@
                 </article>
                 <article class="gallery__article">
                     <div class="gallery__photo">
-                        <img class="gallery__img" src="img/photo-wing-mobile@1x.jpg">
+                        <img class="gallery__img img-mob" src="img/photo-wing-mobile@1x.jpg">
+                        <img class="gallery__img img-tab " src="img/photo-wing-tablet@2x.jpg">
+                        <img class="gallery__img img-des" src="img/photo-wing-desktop@2x.jpg">
 
                     </div>
                     <div class="gallery__user-comment">
@@ -161,7 +183,9 @@
             <div class="container">
                 <form class="process__form" action="https://echo.htmlacademy.ru">
 
-                    <img src="img/photo-road-mobile@1x.jpg" class="process__img">
+                    <img src="img/photo-road-mobile@1x.jpg" class="process__img img-mob">
+                    <img src="img/photo-road-tablet@2x.jpg" class="process__img img-tab ">
+                    <img src="img/photo-road-desktop@2x.jpg" class="process__img img-des ">
                     <div class="process__settings">
                         <div class="process__range-btn">
                             <button class="process__btn-frame"></button>
@@ -198,9 +222,9 @@
         <footer class="footer footer--photo">
             <div class="container">
                 <div class="footer__logo">
-
-                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
-
+                    <a href="index.html">
+                        <img src="img/logo-pink-blue-desktop.svg" alt="logo">
+                    </a>
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>

@@ -23,7 +23,7 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a class="header__link" href="#">Главная</a>
+                            <a class="header__link header__link--here" href="#">Главная</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="photo.html">Фотографии</a>
@@ -70,6 +70,8 @@
                     <span class="advantages__promo">Нам есть, что вам предложить!</span>
                 </div>
             </div>
+        </section>
+        <section class="advantages advantages__clone">
             <div class="advantage__block">
                 <div class="container">
                     <div class="advantages__item advantages__item--first">
@@ -77,24 +79,25 @@
                         </h2>
                         <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__item--second">
                         <h2 class="advantages__headline">Меняет мир вокруг
                         </h2>
                         <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__item--last">
                         <h2 class="advantages__headline">Заводит новых друзей
                         </h2>
-                        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                        <p class="advantages__text advantages__text--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="research">
             <div class="container">
+                <div class="research__timer">24</div>
                 <div class="research__block">
                     <h3 class="research__headline">Эффект на&#160;24&#160;часа!</h3>
-                    <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <p class="research__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от использования приложения длится целые сутки!</p>
                     <a href="#" class="research__link">Узнать больше об исследовании</a>
                 </div>
             </div>
@@ -107,7 +110,7 @@
                         <h3>Николай Петров</h3>
                         <span>25 лет, водитель трамвая</span>
                     </div>
-                    <blockquote>&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</blockquote>
+                    <blockquote>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
                 </div>
                 <!--
                 <div class="reviews__item">
@@ -142,7 +145,8 @@
                         <div class="options__item options__first-item">Смайлики</div>
                         <div class="options__item options__first-item">Комментарии</div>
                     </div>
-                    <div class="options__package">
+
+                    <div class="options__package options__package1">
                         <div class="options__item--headline"><span class="options__price">База</span>
                             <span class="options__price options__price--usd">1,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
@@ -150,7 +154,7 @@
                         <div class="options__item options__item--no"><span>Комментарии</span> </div>
                     </div>
 
-                    <div class="options__package">
+                    <div class="options__package options__package2">
                         <div class="options__item--headline options__item--headline--hit"><span class="options__price">Стандарт</span>
                             <span class="options__price options__price--usd">3,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
@@ -159,7 +163,8 @@
                         <div class="options__item options__item--no"><span>Комментарии</span>
                         </div>
                     </div>
-                    <div class="options__package">
+
+                    <div class="options__package options__package3">
                         <div class="options__item--headline"><span class="options__price">Анлим</span>
                             <span class="options__price options__price--usd">9,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
@@ -169,13 +174,13 @@
                 </div>
                 <ul class="slider-controls">
                     <li>
-                        <button class="slider-controls__btn"></button>
+                        <button class="slider-controls__btn package-show"></button>
                     </li>
                     <li>
-                        <button class="slider-controls__btn"></button>
+                        <button class="slider-controls__btn slider-controls__btn--active"></button>
                     </li>
                     <li>
-                        <button class="slider-controls__btn"></button>
+                        <button class="slider-controls__btn package-show"></button>
                     </li>
                 </ul>
             </div>
@@ -212,7 +217,9 @@
         <footer class="footer footer__index">
             <div class="container">
                 <div class="footer__logo">
-                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+                    <a href="#">
+                    <img src="img/logo-pink-blue-desktop.svg" alt="logo">
+                    </a>
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>
@@ -221,7 +228,10 @@
                 </div>
                 <div class="footer__copyright">
                     <span>Разработано</span>
-                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"><img src="img/logo-htmlacademy.svg" alt="logo academy"></a>
+                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy">
+                    <img class="academy-logo" src="img/logo-htmlacademy.svg" alt="logo academy">
+                        <img class="academy-logo__hover" src="img/logo-htmlacademy-hover.svg" alt="logo academy">
+                        </a>
                 </div>
             </div>
         </footer>
