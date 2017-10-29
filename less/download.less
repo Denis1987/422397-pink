@@ -63,7 +63,7 @@
         background-color: @dark_blue;
     }
     @media @tablet {
-        margin-left: 0;
+        margin-left: calc(50%-330px);
         margin-bottom: 0;
         padding-left: 19px;
         padding-right: 19px;
@@ -72,6 +72,7 @@
     }
     @media @desktop {
         padding-left: 0;
+        margin-left: 0;
     }
 
 }
@@ -144,7 +145,7 @@
         background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
     }
     @media @tablet {
-        background-position: -20px bottom;
+        background-position: center bottom;
         padding-top: 0;
         padding-bottom: 108px;
         background-image: url(../img/iphone-hand-tablet@1x.png);
