@@ -10,11 +10,10 @@
 
 <body>
     <header class="header header--form">
-
         <div class="header__menu header__menu--form">
             <div class="container">
                 <div class="header__logtog">
-                    <a class="header__logo"><img src="img/logo-pink-white-mobile.svg" alt="logo"></a>
+                    <a class="header__logo header__logo--link" href="index.html"></a>
                     <a class="header__toggler"></a>
                 </div>
                 <nav class="header__nav">
@@ -26,10 +25,10 @@
                             <a class="header__link" href="photo.html">Фотографии</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#">Конкурс</a>
+                            <a class="header__link header__link--here" href="#">Конкурс</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="https://htmlacademy.ru/">html academy</a>
+                            <a class="header__link" href="https://htmlacademy.ru/">HTML academy</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,9 +39,6 @@
                 <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
             </div>
         </div>
-
-
-
     </header>
     <main class="main">
         <section class="form">
@@ -61,7 +57,6 @@
                             <label class="form__user" for="name">Имя: </label>
                             <input class="form__text" type="text" id="name" name="name" placeholder="Введите ваше имя">
                         </div>
-
                         <div class="form__fieldset">
                             <label class="form__user" for="patronymic">Отчество:
                             </label>
@@ -72,28 +67,22 @@
                         <legend class="form__choice">Ваши безбашенные достижения в путешествии</legend>
                         <ul class="form__ul">
                             <li class="form__li">
-
-                                <label class="form__adventure" for="adventure-1"><input class="form__check" type="checkbox" name="achievements" id="adventure-1">
+                                <label class="form__adventure" for="adventure-1"><input class="form__check" type="checkbox" name="achievements" id="adventure-1" checked>
                                     <span class="checkbox_indicator"></span>Сделал селфи с акулой</label>
                             </li>
                             <li class="form__li">
-
-                                <label class="form__adventure" for="adventure-2"><input class="form__check" type="checkbox" name="achievements" id="adventure-2"><span class="checkbox_indicator"></span>Обгорел на пляже</label>
+                                <label class="form__adventure" for="adventure-2"><input class="form__check" type="checkbox" name="achievements" id="adventure-2" checked><span class="checkbox_indicator"></span>Обгорел на пляже</label>
                             </li>
                             <li class="form__li">
-
                                 <label class="form__adventure" for="adventure-3"> <input class="form__check" type="checkbox" name="achievements" id="adventure-3"><span class="checkbox_indicator"></span>Видел Чака Норриса</label>
                             </li>
                             <li class="form__li">
-
                                 <label class="form__adventure" for="adventure-4"> <input class="form__check" type="checkbox" name="achievements" id="adventure-4"><span class="checkbox_indicator"></span>Накупил сувениров</label>
                             </li>
                             <li class="form__li">
-
-                                <label class="form__adventure" for="adventure-5">   <input class="form__check" type="checkbox" name="achievements" id="adventure-5"><span class="checkbox_indicator"></span>Удержал башню</label>
+                                <label class="form__adventure" for="adventure-5">   <input class="form__check" type="checkbox" name="achievements" id="adventure-5" checked><span class="checkbox_indicator"></span>Удержал башню</label>
                             </li>
                             <li class="form__li">
-
                                 <label class="form__adventure" for="adventure-6"><input class="form__check" type="checkbox" name="achievements" id="adventure-6"><span class="checkbox_indicator"></span>Разгромил отель</label>
                             </li>
                         </ul>
@@ -109,7 +98,7 @@
                             <div class="form__fieldset form__mail">
                                 <label class="form__user" for="mail">Адрес почты
                             </label>
-                                <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту">
+                                <input class="form__text" type="text" id="mail" name="mail" placeholder="Введите почту*">
                             </div>
                         </div>
                     </fieldset>
@@ -117,16 +106,13 @@
                         <legend class="form__choice">С каким приложением путешествовали?</legend>
                         <ul class="form__radio-itemst">
                             <li class="form__radio-item">
-
-                                <label class="form__adventure" for="ios"> <input class="form__options" type="radio" name="ios" id="ios"><span class="radio_indicator"></span>Pink для iOS</label>
+                                <label class="form__adventure" for="ios"> <input class="form__options" type="radio" name="os" id="ios" checked><span class="radio_indicator"></span>Pink для iOS</label>
                             </li>
                             <li class="form__radio-item">
-
-                                <label class="form__adventure" for="android"> <input class="form__options" type="radio" name="android" id="android"><span class="radio_indicator"></span>Pink на Android</label>
+                                <label class="form__adventure" for="android"> <input class="form__options" type="radio" name="os" id="android"><span class="radio_indicator"></span>Pink на Android</label>
                             </li>
                             <li class="form__radio-item">
-
-                                <label class="form__adventure" for="windows"> <input class="form__options" type="radio" name="windows" id="windows"><span class="radio_indicator"></span>Windows Phone</label>
+                                <label class="form__adventure" for="windows"> <input class="form__options " type="radio" name="os" id="windows"><span class="radio_indicator"></span>Windows Phone</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -141,13 +127,26 @@
                         <span class="form__button-span form__button-span--mob-tab"><b>*</b> &mdash; Обязательные поля</span>
                         <span class="form__button-span form__button-span--desktop"><b>*</b> &mdash; Обязательные для заполнения поля</span>
                     </div>
+                    <div class="form-popup__first">
+                        <h2>Что-то пошло не так!
+                        </h2>
+                        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                        <button class="form__button btn" type="submit">ok</button>
+                    </div>
+                    <div class="form-popup">
+                        <h2>Ваша заявка отправлена</h2>
+                        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&#160;вас.</p>
+                        <button class="form__button btn" type="submit">закрыть окно</button>
+                    </div>
                 </form>
             </div>
         </section>
         <footer class="footer">
             <div class="container">
                 <div class="footer__logo">
-                    <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+                    <a href="index.html">
+                        <img src="img/logo-pink-blue-desktop.svg" alt="logo">
+                    </a>
                 </div>
                 <div class="footer__social">
                     <a class="social_link footer__twitter" href="#" aria-label="twitter page"><span class="visually-hidden">twitter</span></a>
@@ -156,7 +155,10 @@
                 </div>
                 <div class="footer__copyright">
                     <span>Разработано</span>
-                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy"><img src="img/logo-htmlacademy.svg" alt="logo academy"></a>
+                    <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy">
+                        <img class="academy-logo" src="img/logo-htmlacademy.svg" alt="logo academy">
+                        <img class="academy-logo__hover" src="img/logo-htmlacademy-hover.svg" alt="logo academy">
+                    </a>
                 </div>
             </div>
         </footer>
