@@ -12,7 +12,6 @@ var imagemin = require("gulp-imagemin");
 var pump = require("pump");
 var rename = require("gulp-rename");
 var run = require("run-sequence");
-var svgstore = require("gulp-svgstore");
 var uglify = require("gulp-uglify");
 var webp = require("gulp-webp");
 
@@ -68,22 +67,6 @@ gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
-});
-
-//SVG спрайт
-gulp.task("sprite", function () {
-  return gulp.src("img/sprite-*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
-});
-
-//posthtml-include
-gulp.task("html", function () {
-  return gulp.src("*.html")
-  .pipe(gulp.dest("build"));
 });
 
 //Очистка build
