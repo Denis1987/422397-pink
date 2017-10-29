@@ -50,6 +50,7 @@
         padding-left: 80px;
         padding-right: 60px;
         padding-top: 53px;
+        padding-bottom: 28px;
     }
 
 }
@@ -182,7 +183,26 @@
         padding: 19px 0px 51px 0px;
         width: 200px;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding: 23px 0px 35px 0px;
+        width: 312px;
+        margin-bottom: 12px;
+    }
+
+}
+
+.process__range::after {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        position: absolute;
+        content: '';
+        width: 408px;
+        height: 2px;
+        background-color: #DDDFE0;
+        top: 59px;
+        left: -70px;
+    }
 
 }
 
@@ -206,7 +226,11 @@
         padding-right: 28px;
         margin-bottom: 51px;
     }
-    @media @desktop {}
+    @media @desktop {
+        width: 363px;
+        padding-left: 23px;
+        margin-bottom: 133px;
+    }
 
 }
 
@@ -221,7 +245,9 @@
         margin: 0;
         margin-left: 22px;
     }
-    @media @desktop {}
+    @media @desktop {
+        width: 291px;
+    }
 
 }
 
@@ -232,6 +258,7 @@
     border: solid 2px @cherry;
     border-radius: 50%;
     position: absolute;
+    cursor: pointer;
     top: -6px;
     right: 53px;
     background-color: @grey;
@@ -239,7 +266,10 @@
     @media @tablet {
         top: 13px;
     }
-    @media @desktop {}
+    @media @desktop {
+        top: 17px;
+        right: 204px;
+    }
 
 }
 
@@ -252,6 +282,7 @@
     font-size: 18px;
     line-height: 18px;
     width: 280px;
+    cursor: pointer;
     display: block;
     box-shadow: inset 0 0 0 3px @cherry;
     border-radius: 50px;
@@ -281,7 +312,12 @@
     @media @tablet {
         margin-bottom: 23px;
     }
-    @media @desktop {}
+    @media @desktop {
+        width: 183px;
+        margin-left: 26px;
+        margin-bottom: 30px;
+        margin-right: 43px;
+    }
 
 }
 
@@ -298,6 +334,14 @@
 .process__reset {
     color: @dark_grey;
     box-shadow: inset 0 0 0 3px @dark_grey;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 184px;
+        margin-left: 41px;
+        margin-right: 0;
+        margin-left: 0;
+    }
 
 }
 
@@ -320,7 +364,7 @@
         width: 300px;
         display: flex;
         flex-wrap: wrap;
-        outline: 1px red solid;
+
     }
     @media @desktop {
         width: 436px;

@@ -15,7 +15,7 @@
         font-size: 50px;
         line-height: 60px;
         width: 100%;
-        padding: 0 0px 0 19px;
+
     }
 
 }
@@ -29,7 +29,7 @@
         width: 940px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 220px 0 240px;
+        padding: 0 220px 0 220px;
     }
 
 }
@@ -161,7 +161,7 @@
         height: 302px;
         top: -358px;
         z-index: 2;
-        left: 45px;
+        left: 35px;
         background-image: url(../img/iphone-screen-1-desktop@1x.png);
         background-position: center;
     }
@@ -178,7 +178,7 @@
         height: 302px;
         top: -358px;
         z-index: 2;
-        left: 55px;
+        left: 45px;
         background-image: url(../img/iphone-screen-2-desktop@1x.png);
         background-position: center;
     }
@@ -195,7 +195,7 @@
         height: 302px;
         top: -358px;
         z-index: 2;
-        left: 62px;
+        left: 52px;
         background-image: url(../img/iphone-screen-3-desktop@1x.png);
         background-position: center;
     }
@@ -276,20 +276,12 @@
 
 }
 
-.advantages__item--second .advantages__headline {
-    @media @mobile {}
-    @media @tablet {}
-    @media @desktop {
-        padding-left: 39px;
-    }
-}
 
 .advantages__item--second .advantages__text {
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        padding-left: 33px;
-        padding-right: 16px;
+        padding: 0 16px;
     }
 }
 
@@ -297,7 +289,7 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        padding-left: 39px;
+        padding-left: 22px;
         /* padding-top: 1px; */
         padding-right: 33px;
     }
@@ -308,8 +300,8 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        padding-left: 34px;
-        padding-right: 0px;
+        padding-left: 32px;
+        padding-right: 21px;
     }
 
 }
@@ -318,8 +310,8 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        padding-left: 32px;
-        padding-right: 0px;
+        padding-left: 19px;
+        padding-right: 10px;
     }
 
 }
@@ -376,4 +368,19 @@
 
 .advantages__clone {
     position: relative;
+}
+
+.advantages__text:first-child {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        width: auto;
+        padding-left: 30px;
+        padding-right: 42px;
+        margin-top: 25px;
+    }
+
 }
