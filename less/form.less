@@ -104,6 +104,7 @@
 
 }
 
+
 .form__text {
     width: 100%;
     margin-top: 5px;
@@ -113,6 +114,20 @@
     letter-spacing: 0.5px;
     border: solid 2px @grey;
     color: @dark_blue;
+}
+
+.form__text:hover {
+    border: solid 2px @dark_blue;
+}
+
+.form__text:active {
+    border: solid 2px @cherry;
+    outline: none;
+}
+
+.form__text:focus {
+    border: solid 2px @cherry;
+    outline: none;
 }
 
 .form__choice {
@@ -679,7 +694,7 @@
         resize: none;
         margin-top: 20px;
         margin-bottom: 54px;
-        letter-spacing: 0.px;
+        letter-spacing: 0px;
         font-family: 'Open Sans';
         letter-spacing: 0.4px;
     }
@@ -895,13 +910,17 @@
 
 .form-popup {
     z-index: 3;
-    position: absolute;
+
     content: '';
-    width: 780px; //    position: fixed;
-    top: 662px;
-    left: 80px;
+    width: 780px;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 
     display: none;
+
 
     background: linear-gradient(to top, @grey 43%, white 0%);
 
@@ -909,16 +928,10 @@
     @media @mobile {
         width: 320px;
 
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        top: 1233px;
     }
     @media @tablet {
         width: 460px;
-        top: 694px;
-        left: 100px;
+
         background: linear-gradient(to top, #F2F2F2 38%, white 0%);
 
     }
@@ -993,25 +1006,23 @@
 .form-popup__first {
     box-shadow: 0 1px 29px 0 rgba(0, 1, 1, 0.2);
     background-color: white;
-    top: 209px;
-    left: 240px;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: none;
     z-index: 3;
     width: 460px;
-    position: absolute;
+
     content: '';
     @media @mobile {
-        right: 0;
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
+
         width: 320px;
-        top: 758px;
+
     }
-    @media @tablet {
-        top: 220px;
-        left: 100px;
-    }
+    @media @tablet {}
     @media @desktop {}
 
     h2 {
