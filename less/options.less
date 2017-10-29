@@ -13,7 +13,10 @@
         padding-top: 12px;
         padding-bottom: 13px;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 18px;
+        padding-bottom: 20px;
+    }
 
 }
 
@@ -23,7 +26,9 @@
     @media @tablet {
         margin-bottom: -3px;
     }
-    @media @desktop {}
+    @media @desktop {
+        margin-bottom: 1px;
+    }
 
 }
 
@@ -35,8 +40,12 @@
     @media @mobile {}
     @media @tablet {
         background-position: -13px 1px;
+
     }
-    @media @desktop {}
+    @media @desktop {
+        background-image: url(../img/bg-hit-tablet.svg);
+        background-position: 0px 0px;
+    }
 
 }
 
@@ -52,7 +61,10 @@
         left: 7px;
         top: 9px;
     }
-    @media @desktop {}
+    @media @desktop {
+        left: 13px;
+        top: 18px;
+    }
 
 }
 
@@ -72,7 +84,9 @@
         font-size: 16px;
         line-height: 30px;
     }
-    @media @desktop {}
+    @media @desktop {
+        font-size: 18px;
+    }
 
 }
 
@@ -117,10 +131,15 @@
     position: relative;
     @media @mobile {}
     @media @tablet {
+
         padding-top: 86px;
-        padding-bottom: 0;
+        padding-bottom: 38px;
+        margin-bottom: 16px;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 166px;
+        padding-bottom: 65px;
+    }
 
 }
 
@@ -135,7 +154,10 @@
         line-height: 30px;
         margin-top: 0;
     }
-    @media @desktop {}
+    @media @desktop {
+        font-size: 24px;
+        line-height: 30px;
+    }
 
 }
 
@@ -182,7 +204,9 @@
         padding-top: 29px;
         background-position: center;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 42px;
+    }
 
 }
 
@@ -208,16 +232,23 @@
         padding-top: 29px;
         background-position: center;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 42px;
+    }
 
 }
 
 .options__first-item {
     @media @mobile {}
     @media @tablet {
-        padding: 7px 14px 7px 14px;
+        padding: 7px 15px 7px 15px;
+
     }
-    @media @desktop {}
+    @media @desktop {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 14px 14px 14px 23px;
+    }
 
 }
 
@@ -226,23 +257,80 @@
     content: '';
     background-image: url(../img/bg-triangle-white.svg);
     left: 0;
-    right: 0;
-
-    bottom: -26px;
-
-    height: 95px;
-
+    width: 100%;
+    background-position: bottom;
+    height: 100px;
+    top: -40px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    @media @mobile {}
+    @media @mobile {
+        top: -75px;
+    }
     @media @tablet {
 
         width: 100%;
-        top: 0px;
+
+        top: -21px;
         background-position: bottom;
         height: 72px;
 
 
 
     }
+    @media @desktop {
+        width: 100%;
+        top: -15px;
+        background-position: bottom;
+        height: 118px;
+    }
+}
+
+.options__package1,
+.options__package2,
+.options__package3 {
+    @media @mobile {
+        display: none;
+    }
+    @media @tablet {
+        display: block;
+    }
+    @media @desktop {
+        display: block;
+    }
+
+}
+
+.options__package-show {
+    @media @mobile {
+        display: block;
+    }
+    @media @tablet {}
     @media @desktop {}
+    //package-show1
+    //package-show2
+    //package-show3
+    //Денис ну ты понЕл
+}
+
+.slider-controls {
+    @media @mobile {}
+    @media @tablet {
+        display: none;
+    }
+    @media @desktop {
+        display: none;
+    }
+
+}
+
+.options .container {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
 }
