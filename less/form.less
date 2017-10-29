@@ -26,12 +26,12 @@
 
 }
 
-.main__subtitle--mob-tab {
+.form__first-block .main__subtitle--mob-tab {
     @media @mobile {
         display: block;
     }
     @media @tablet {
-        display: block;
+        display: none;
     }
     @media @desktop {
         display: none;
@@ -39,12 +39,12 @@
 
 }
 
-.main__subtitle--desktop {
+.form__first-block .main__subtitle--desktop {
     @media @mobile {
         display: none;
     }
     @media @tablet {
-        display: none;
+        display: block;
     }
     @media @desktop {
         display: block;
@@ -68,7 +68,22 @@
         display: flex;
         margin-bottom: 48px;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding: 0 2px;
+        color: #d22856;
+        padding-right: 35px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+.form__fieldset:last-child {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        margin-bottom: 0;
+    }
 
 }
 
@@ -89,6 +104,7 @@
 
 }
 
+
 .form__text {
     width: 100%;
     margin-top: 5px;
@@ -98,6 +114,20 @@
     letter-spacing: 0.5px;
     border: solid 2px @grey;
     color: @dark_blue;
+}
+
+.form__text:hover {
+    border: solid 2px @dark_blue;
+}
+
+.form__text:active {
+    border: solid 2px @cherry;
+    outline: none;
+}
+
+.form__text:focus {
+    border: solid 2px @cherry;
+    outline: none;
 }
 
 .form__choice {
@@ -146,6 +176,12 @@
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        padding: 0;
+        width: 260px;
+    }
 
 }
 
@@ -164,16 +200,20 @@
 
 .form__adventure {
     position: relative;
+    padding-left: 69px;
 }
 
 .form__adventure input[type='checkbox'] + .checkbox_indicator {
-    position: absolute; //    top: 7px;
-    //    left: -1px;
-    width: 23px;
-    height: 23px;
-    background-color: red;
-    display: block; //
-    background-image: url(../img/);
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    box-shadow: inset 0 0 0 3px @dark_grey;
+    background-color: white;
+    border-radius: 3px;
+
 }
 
 .form__check {
@@ -182,10 +222,17 @@
 
 
 .form__adventure input:checked + .checkbox_indicator {
-    //    width: 27px;
-    //    height: 23px;
-    //
-    //    background-image: url(../img/svg-device/checkbox-on.svg);
+    background-image: url(../img/icon-yes-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__adventure input[type='checkbox'] + .checkbox_indicator:hover {
+    box-shadow: inset 0 0 0 3px @dark_blue;
+}
+
+.form__adventure input[type='checkbox'] + .checkbox_indicator:active {
+    box-shadow: inset 0 0 0 3px @cherry;
 }
 
 .form__common .form__checkbox {
@@ -200,8 +247,7 @@
     }
     @media @desktop {
         width: 100%;
-        padding-right: 60px;
-        padding-left: 60px;
+
     }
 
 }
@@ -233,10 +279,10 @@
     }
     @media @desktop {
         width: 100%;
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 25px;
+        padding-left: 54px;
 
-
+        margin-top: 57px;
 
     }
 
@@ -253,7 +299,7 @@
 }
 
 .form__common .form__textarea {
-    margin-bottom: 42px;
+    margin-bottom: 43px;
     @media @mobile {}
     @media @tablet {
         order: 4;
@@ -289,18 +335,33 @@
 
 .form__adventure input[type='radio'] + .radio_indicator {
     position: absolute;
-    top: 7px;
-    left: -1px;
-
-    width: 25px;
-    height: 25px;
-    background-color: red; //    background-image: url(../img/svg-device/radio-off.svg);
+    top: 3px;
+    left: 20px;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 0 5px white;
+    box-shadow: inset 0 0 0 10px white;
+    border: 2px solid #DDDFE0;
 }
 
 
 
+.form__options {
+    .visually-hidden;
+}
+
 .form__adventure input:checked + .radio_indicator {
-    //    background-image: url(../img/svg-device/radio-on.svg);
+    background-color: @cherry;
+}
+
+.form__adventure input[type='radio'] + .radio_indicator:hover {
+    border: 2px solid @dark_blue;
+}
+
+.form__adventure input[type='radio'] + .radio_indicator:active {
+    border: 2px solid @cherry;
 }
 
 .form__adventure {
@@ -310,6 +371,15 @@
 
 .form__radio-item {
     margin-bottom: 45px;
+}
+
+.form__radio-item:last-child {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        margin-bottom: 0;
+    }
+
 }
 
 .form__common .form__radio {
@@ -322,11 +392,12 @@
         width: 620px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 54px;
+        margin-bottom: 58px;
     }
     @media @desktop {
-        width: 50%;
+        width: 46%;
         margin: 0;
+        margin-top: 5px;
     }
 
 }
@@ -335,9 +406,17 @@
 .form__textarea-center {
     padding-left: 20px;
     padding-right: 20px;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 .form__common {
+    position: relative;
     @media @mobile {}
     @media @tablet {
         margin-top: 66px;
@@ -408,7 +487,7 @@
 .form .container {
     @media @mobile {}
     @media @tablet {
-        padding-top: 44px;
+        padding-top: 59px;
     }
     @media @desktop {
         width: 960px;
@@ -432,6 +511,7 @@
     @media @desktop {
         width: 50%;
         margin: 0;
+        margin-top: 15px;
     }
 
 }
@@ -481,9 +561,19 @@
 }
 
 .form__radio-itemst {
-    padding-top: 9px;
-    padding-left: 108px;
-    padding-bottom: 1px;
+
+    @media @mobile {}
+    @media @tablet {
+        margin-top: 21px;
+        padding-left: 38px;
+        margin-bottom: 58px;
+    }
+    @media @desktop {
+        margin-top: 24px;
+        padding-left: 51px;
+        margin-bottom: 58px;
+    }
+
 }
 
 .form__contacts .form__fieldset {
@@ -492,18 +582,23 @@
         flex-direction: column;
     }
     @media @desktop {
-        width: 375px;
+        width: 412px;
 
     }
 
 }
 
 .form__contacts .form__choice {
-    @media @mobile {}
+    @media @mobile {
+        display: none;
+    }
     @media @tablet {
         margin-bottom: 32px;
+        display: block;
     }
-    @media @desktop {}
+    @media @desktop {
+        margin-bottom: 28px;
+    }
 
 }
 
@@ -544,7 +639,9 @@
         padding-top: 10px;
         margin-bottom: 25px;
     }
-    @media @desktop {}
+    @media @desktop {
+        padding-top: 0;
+    }
 
 }
 
@@ -561,9 +658,22 @@
 .form__checkbox .form__ul {
     @media @mobile {}
     @media @tablet {
-        padding: 24px 0px 7px 101px;
+        padding: 24px 0px 7px 38px;
     }
-    @media @desktop {}
+    @media @desktop {
+        margin-top: 35px;
+        padding: 0;
+        margin-bottom: 19px;
+        padding-right: 60px;
+        padding-left: 60px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -590,6 +700,8 @@
     }
     @media @desktop {
         width: 100%;
+        height: 127px;
+        margin-bottom: 42px;
     }
 
 }
@@ -622,4 +734,346 @@
     }
     @media @desktop {}
 
+}
+
+.form__radio-itemst .form__adventure {
+    @media @mobile {
+        padding-left: 89px;
+    }
+    @media @tablet {
+        padding-left: 79px;
+    }
+    @media @desktop {}
+
+}
+
+.form__textarea .form__choice {
+    @media @mobile {
+        margin-bottom: 17px;
+    }
+    @media @tablet {}
+    @media @desktop {}
+
+}
+
+.form__button:hover {
+    background-color: #1C9B5E;
+}
+
+.form__button:active {
+    color: #2AAB6D;
+    background-color: #1C9B5E;
+}
+
+.form__li .form__adventure {
+    @media @mobile {}
+    @media @tablet {
+        padding-left: 59px;
+        letter-spacing: 0.4px;
+    }
+    @media @desktop {}
+
+}
+
+.form__flex-block .form__user {
+    @media @mobile {}
+    @media @tablet {
+        position: relative;
+    }
+    @media @desktop {}
+
+}
+
+.form__flex-block .form__user::before {
+    @media @mobile {}
+    @media @tablet {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        z-index: 2;
+        top: -60px;
+        right: 2px;
+    }
+    @media @desktop {}
+
+}
+
+.form__mail .form__user::before {
+    @media @mobile {}
+    @media @tablet {
+        background-image: url(../img/icon-mail.svg);
+        background-repeat: no-repeat;
+    }
+    background-color: @grey;
+    background-position: center;
+    @media @desktop {}
+
+}
+
+.form__phone .form__user::before {
+    @media @mobile {}
+    @media @tablet {
+        background-image: url(../img/icon-phone.svg);
+        background-repeat: no-repeat;
+    }
+    background-color: @grey;
+    background-position: center;
+    @media @desktop {}
+
+}
+
+.form__first-block .main__subtitle--desktop {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        padding: 0px 60px;
+    }
+
+}
+
+.form {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        margin-bottom: 0;
+    }
+
+}
+
+.form__li {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {}
+
+}
+
+.form__li:nth-child(1) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 0;
+    }
+
+}
+
+.form__li:nth-child(2) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 3;
+    }
+
+}
+
+.form__li:nth-child(3) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 1;
+        margin-left: 16px;
+    }
+
+}
+
+.form__li:nth-child(4) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 4;
+        margin-left: 18px;
+    }
+
+}
+
+.form__li:nth-child(5) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 2;
+        width: 206px;
+    }
+
+}
+
+.form__li:nth-child(6) {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        order: 6;
+        width: 208px;
+    }
+
+}
+
+.form-popup {
+    z-index: 3;
+
+    content: '';
+    width: 780px;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+
+
+    background: linear-gradient(to top, @grey 43%, white 0%);
+
+    box-shadow: 0 1px 29px 0 rgba(0, 1, 1, 0.2);
+    @media @mobile {
+        width: 320px;
+
+    }
+    @media @tablet {
+        width: 460px;
+
+        background: linear-gradient(to top, #F2F2F2 38%, white 0%);
+
+    }
+    @media @desktop {}
+
+    h2 {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 41px;
+        margin-bottom: 3px;
+        @media @mobile {
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 39px;
+        }
+        @media @tablet {
+            margin-left: auto;
+            margin-right: auto;
+            width: 210px;
+            display: block;
+            margin-bottom: 21px;
+            margin-top: 37px;
+        }
+        @media @desktop {}
+
+    }
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin-bottom: 87px;
+        @media @mobile {
+            font-size: 14px;
+            width: 320px;
+            line-height: 24px;
+            padding: 0 25px;
+            margin-top: 23px;
+            margin-bottom: 79px;
+        }
+        @media @tablet {
+            width: 321px;
+            margin-bottom: 82px;
+        }
+        @media @desktop {}
+
+    }
+    .form__button {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 460px;
+        margin-bottom: 50px;
+        @media @mobile {
+            width: 280px;
+        }
+        @media @tablet {
+            width: 300px;
+        }
+        @media @desktop {}
+
+    }
+}
+
+.form-popup__first {
+    box-shadow: 0 1px 29px 0 rgba(0, 1, 1, 0.2);
+    background-color: white;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+    z-index: 3;
+    width: 460px;
+
+    content: '';
+    @media @mobile {
+
+        width: 320px;
+
+    }
+    @media @tablet {}
+    @media @desktop {}
+
+    h2 {
+        display: block;
+
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 37px;
+        width: 250px;
+        margin-bottom: 22px;
+        @media @mobile {
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 40px;
+        }
+        @media @tablet {}
+        @media @desktop {}
+
+    }
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 308px;
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin-bottom: 38px;
+        @media @mobile {
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 26px;
+        }
+        @media @tablet {}
+        @media @desktop {}
+
+    }
+    .form__button {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 53px;
+
+    }
+}
+
+.form-popup__show {
+    display: block;
 }
