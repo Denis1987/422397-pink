@@ -127,10 +127,7 @@
 }
 
 .gallery__article {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -140,6 +137,7 @@
     @media @tablet {}
     @media @desktop {
         margin-bottom: 53px;
+        width: 300px;
     }
 
 }
@@ -282,7 +280,7 @@
 
 }
 
-.gallery__article--first .gallery__user--first {
+.gallery__article--first .gallery__user-first {
     @media @mobile {}
     @media @tablet {
         display: -webkit-flex;
@@ -302,7 +300,7 @@
 
 }
 
-.gallery__user--first .gallery__user {
+.gallery__user-first .gallery__user {
     @media @mobile {}
     @media @tablet {
         margin-top: 0;
@@ -311,7 +309,7 @@
 
 }
 
-.gallery__user--first .gallery__info {
+.gallery__user-first .gallery__info {
     @media @mobile {}
     @media @tablet {
         order: 3;
@@ -320,7 +318,7 @@
 
 }
 
-.gallery__user--first .gallery__rating {
+.gallery__user-first .gallery__rating {
     @media @mobile {}
     @media @tablet {
         order: 2;
@@ -330,7 +328,7 @@
 
 }
 
-.gallery__user--first .gallery__likes {
+.gallery__user-first .gallery__likes {
     @media @mobile {}
     @media @tablet {
         order: 1;
@@ -341,7 +339,7 @@
 
 }
 
-.gallery__container--big {
+.gallery__container-big {
     @media @mobile {}
     @media @tablet {
         display: -webkit-flex;
@@ -361,7 +359,7 @@
 
 }
 
-.gallery__container--big .gallery__article {
+.gallery__container-big .gallery__article {
     @media @mobile {}
     @media @tablet {
         width: 300px;
@@ -370,7 +368,7 @@
 
 }
 
-.gallery__container--big .gallery__user-comment {
+.gallery__container-big .gallery__user-comment {
     @media @mobile {}
     @media @tablet {
 
@@ -392,7 +390,7 @@
 
 }
 
-.gallery__container--big .gallery__user {
+.gallery__container-big .gallery__user {
     @media @mobile {}
     @media @tablet {
         margin: 0;
@@ -403,7 +401,7 @@
 
 }
 
-.gallery__container--big .gallery__rating {
+.gallery__container-big .gallery__rating {
     @media @mobile {}
     @media @tablet {
         order: 1;
@@ -413,7 +411,7 @@
 
 }
 
-.gallery__container--big .gallery__likes {
+.gallery__container-big .gallery__likes {
     @media @mobile {}
     @media @tablet {
         margin: 0; //        margin-top: auto;
@@ -422,7 +420,7 @@
 
 }
 
-.gallery__container--big .gallery__info {
+.gallery__container-big .gallery__info {
     @media @mobile {}
     @media @tablet {
         margin-bottom: auto;
@@ -549,6 +547,17 @@
     @media @desktop {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+}
+
+.gallery__article--first {
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
 }

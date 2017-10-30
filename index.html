@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="download__container">
+            <div class="container__box">
                 <div class="download">
                     <h1 class="visually-hidden">Мобильное приложение pink</h1>
                     <span class="download__promo">Взгляните
@@ -63,7 +63,7 @@
             </div>
         </section>
         <section class="advantages advantages__clone">
-            <div class="advantage__block">
+            <div class="advantages__block">
                 <div class="container">
                     <div class="advantages__item advantages__item--first">
                         <h2 class="advantages__headline">Поднимает настроение
@@ -114,26 +114,28 @@
                         <button class="slider-controls__btn"></button>
                     </li>
                 </ul>
+                <button type="button" class="reviews__btn reviews__btn-left"></button>
+                <button type="button" class="reviews__btn reviews__btn-right"></button>
             </div>
         </section>
         <section class="options">
             <div class="container">
                 <div class="options__rates">
                     <div class="options__package options__package--first">
-                        <div class="options__item--headline options__item--headline--first"></div>
+                        <div class="options__item-headline options__item-headline--first"></div>
                         <div class="options__item options__first-item">Розовый фильтр</div>
                         <div class="options__item options__first-item">Смайлики</div>
                         <div class="options__item options__first-item">Комментарии</div>
                     </div>
                     <div class="options__package options__package1">
-                        <div class="options__item--headline"><span class="options__price">База</span>
+                        <div class="options__item-headline"><span class="options__price">База</span>
                             <span class="options__price options__price--usd">1,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
                         <div class="options__item options__item--no"><span>Смайлики</span></div>
                         <div class="options__item options__item--no"><span>Комментарии</span> </div>
                     </div>
                     <div class="options__package options__package2">
-                        <div class="options__item--headline options__item--headline--hit"><span class="options__price">Стандарт</span>
+                        <div class="options__item-headline options__item-headline--hit"><span class="options__price">Стандарт</span>
                             <span class="options__price options__price--usd">3,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
                         <div class="options__item options__item--yes"><span>Смайлики</span></div>
@@ -142,7 +144,7 @@
                         </div>
                     </div>
                     <div class="options__package options__package3">
-                        <div class="options__item--headline"><span class="options__price">Анлим</span>
+                        <div class="options__item-headline"><span class="options__price">Анлим</span>
                             <span class="options__price options__price--usd">9,99 USD</span></div>
                         <div class="options__item options__item--yes"><span>Розовый фильтр</span> </div>
                         <div class="options__item options__item--yes"><span>Смайлики</span></div>
@@ -185,7 +187,21 @@
                 </div>
             </div>
             <div class="contacts__map">
-                <img src="img/bg-map-desktop@1x.jpg" alt="map">
+                <!--                <img src="img/bg-map-desktop@1x.jpg" alt="map">-->
+
+
+                <picture>
+
+                    <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+
+                    <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+
+                    <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="map" class="">
+
+                </picture>
+
+
+
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2376.7636357991264!2d30.319835698735726!3d59.93857986060224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zINGD0LsuINCR0L7Qu9GM0YjQsNGPINCa0L7QvdGO0YjQtdC90L3QsNGPLCAxOS84!5e0!3m2!1sru!2sru!4v1508087781924" width="600" height="200" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
@@ -204,8 +220,8 @@
                 <div class="footer__copyright">
                     <span>Разработано</span>
                     <a class="footer__academy" href="https://htmlacademy.ru/" title="HTML Academy">
-                    <img class="academy-logo" src="img/logo-htmlacademy.svg" alt="logo academy">
-                        <img class="academy-logo__hover" src="img/logo-htmlacademy-hover.svg" alt="logo academy">
+                    <img class="footer__academy--logo" src="img/logo-htmlacademy.svg" alt="logo academy">
+                        <img class="footer__academy--logo-hover" src="img/logo-htmlacademy-hover.svg" alt="logo academy">
                         </a>
                 </div>
             </div>
