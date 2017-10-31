@@ -201,67 +201,84 @@
 }
 
 
-
 .form__li {
     position: relative;
+
 }
 
-.form__li::before {
+.form__li .form__indicator::after {
     position: absolute;
     top: 7px;
     left: -1px;
+    content: '';
     width: 40px;
     height: 40px;
     display: block;
-    content: '';
     box-shadow: inset 0 0 0 3px @dark_grey;
     background-color: white;
     border-radius: 3px;
 }
 
+.form__li input[type='checkbox']:checked + .form__indicator::after {
+    background-image: url(../img/icon-yes-check.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
 
+.form__li input[type='checkbox'] + .form__indicator:hover::after {
+    box-shadow: inset 0 0 0 3px @dark_blue;
+    cursor: pointer;
+}
+
+.form__li input[type='checkbox'] + .form__indicator:active::after {
+    box-shadow: inset 0 0 0 3px @cherry;
+}
+
+
+.form__radio-item .radio_indicator::after {
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    content: '';
+    box-shadow: inset 0 0 0 10px white;
+    border: 2px solid #DDDFE0;
+}
+
+
+.form__radio-item input:checked + .radio_indicator::after {
+    background-color: @cherry;
+}
+
+.form__radio-item input[type='radio'] + .radio_indicator:hover::after {
+    border: 2px solid @dark_blue;
+}
+
+.form__radio-item input[type='radio'] + .radio_indicator:active::after {
+    border: 2px solid @cherry;
+}
+
+.form__adventure {
+    position: relative;
+
+}
+
+.form__indicator:hover::before {
+    cursor: pointer;
+}
 
 .form__adventure {
     //    position: relative;
     padding-left: 69px;
 }
 
-.form__adventure input[type='checkbox'] + .form__li::before {
-    position: absolute;
-    top: 7px;
-    left: -1px;
-    content: '';
-    width: 40px;
-    height: 40px;
-    display: block;
-    box-shadow: inset 0 0 0 3px @dark_grey;
-    background-color: white;
-    border-radius: 3px;
-
-}
-
 .form__check {
     display: none;
 }
-
-
-.form__adventure input:checked + .form__li::before {
-    background-image: url(../img/icon-yes-check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.form__adventure input[type='checkbox'] + .checkbox_indicator:hover {
-    box-shadow: inset 0 0 0 3px @dark_blue;
-}
-
-.form__adventure input[type='checkbox'] + .checkbox_indicator:active {
-    box-shadow: inset 0 0 0 3px @cherry;
-}
-
-
-
-
 
 
 .form__common .form__checkbox {
@@ -362,36 +379,7 @@
     position: relative;
 }
 
-.form__adventure input[type='radio'] + .radio_indicator {
-    position: absolute;
-    top: 3px;
-    left: 20px;
-    border-radius: 50%;
-    width: 39px;
-    height: 39px;
-    background-color: white;
-    -webkit-box-shadow: inset 0 0 0 5px white;
-    box-shadow: inset 0 0 0 10px white;
-    border: 2px solid #DDDFE0;
-}
 
-
-
-.form__options {
-    .visually-hidden;
-}
-
-.form__adventure input:checked + .radio_indicator {
-    background-color: @cherry;
-}
-
-.form__adventure input[type='radio'] + .radio_indicator:hover {
-    border: 2px solid @dark_blue;
-}
-
-.form__adventure input[type='radio'] + .radio_indicator:active {
-    border: 2px solid @cherry;
-}
 
 .form__adventure {
     font-size: 18px;
@@ -400,6 +388,10 @@
 
 .form__radio-item {
     margin-bottom: 45px;
+}
+
+.form__options {
+    .visually-hidden;
 }
 
 .form__radio-item:last-child {
@@ -819,8 +811,8 @@
         position: absolute;
         content: '';
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
         background-color: red;
         z-index: 2;
         top: -60px;
