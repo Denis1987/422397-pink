@@ -19,13 +19,11 @@
 .process {
     margin: 0px auto;
     background-color: @grey;
-    width: 320px;
+    width: 100%;
     @media @mobile {}
-    @media @tablet {
-        width: 660px;
-    }
+    @media @tablet {}
     @media @desktop {
-        width: 100%;
+
         background-color: inherit;
     }
 
@@ -35,7 +33,11 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
-    @media @mobile {}
+    @media @mobile {
+        width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     @media @tablet {
 
         margin-left: auto;
@@ -63,7 +65,9 @@
     padding: 0 35px;
     margin-top: 36px;
     margin-bottom: 39px;
-    @media @mobile {}
+    @media @mobile {
+        margin-bottom: 35px;
+    }
     @media @tablet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -241,7 +245,9 @@
     background-color: @dark_blue;
     margin-left: auto;
     margin-right: auto;
-    @media @mobile {}
+    @media @mobile {
+        width: 240px;
+    }
     @media @tablet {
         margin: 0;
         margin-left: 22px;

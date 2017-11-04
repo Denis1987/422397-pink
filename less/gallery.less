@@ -133,7 +133,11 @@
     justify-content: flex-start;
     color: @dark_blue;
     margin-bottom: 20px;
-    @media @mobile {}
+    @media @mobile {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     @media @tablet {}
     @media @desktop {
         margin-bottom: 53px;
@@ -148,6 +152,12 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    margin-top: -20px;
+    @media @mobile {}
+
+    @media @tablet {}
+    @media @desktop {}
+
 }
 
 .gallery__user span,
@@ -165,6 +175,11 @@
     padding-top: 7px;
     padding-left: 18px;
     padding-right: 18px;
+    @media @mobile {
+        padding-top: 23px;
+    }
+    @media @tablet {}
+    @media @desktop {}
 
 }
 
@@ -255,7 +270,10 @@
 
     width: 280px;
     margin-bottom: 41px;
-    @media @mobile {}
+    @media @mobile {
+        margin-right: auto;
+        margin-left: auto;
+    }
     @media @tablet {
         font-size: 18px;
         width: 660px;

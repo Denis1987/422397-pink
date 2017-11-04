@@ -7,6 +7,10 @@ var headerMenu = document.querySelector(".header__menu");
 var headLogtog = document.querySelector(".header__logtog");
 var headerPhoto = document.querySelector(".header--photo");
 var headerForm = document.querySelector(".header--form");
+var headerIndex = document.querySelector(".header--index");
+
+headNav.classList.add("header__nav--hidden");
+
 
 headToggler.addEventListener("click", function (evt) {
 
@@ -18,6 +22,7 @@ headToggler.addEventListener("click", function (evt) {
     headLogtog.classList.toggle("header__logtog-color");
     headerPhoto.classList.toggle("header--photo-show");
     headerForm.classList.toggle("header--photo-show");
+    headerIndex.classList.toggle("header--index-show");
 
 });
 

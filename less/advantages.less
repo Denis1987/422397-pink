@@ -24,42 +24,43 @@
     @media @mobile {}
     @media @tablet {
         padding: 0px 20px;
-    }
-    @media @desktop {
-        width: 940px;
+        width: 390px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 220px 0 220px;
-    }
-
-}
-
-
-
-
-.advantages__slogan {
-    padding-top: 40px;
-    /* margin-bottom: 114px; */
-    background-color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 1px;
-
-    @media @mobile {}
-    @media @tablet {
-
-        padding-top: 50px;
-        padding-bottom: 45px;
-
-
     }
     @media @desktop {
-        padding-top: 68px;
-        padding-bottom: 70px;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto; //        padding: 0 220px 0 220px;
     }
 
 }
 
+
+
+
+//.advantages__slogan {
+//    padding-top: 40px;
+//    /* margin-bottom: 114px; */
+//    background-color: #fff;
+//    padding-left: 20px;
+//    padding-right: 20px;
+//    padding-bottom: 1px;
+//
+//    @media @mobile {}
+//    @media @tablet {
+//
+//        padding-top: 50px;
+//        padding-bottom: 45px;
+//
+//
+//    }
+//    @media @desktop {
+//        padding-top: 68px;
+//        padding-bottom: 70px;
+//    }
+//
+//}
 .advantages__block {
     position: relative;
     background-color: @grey;
@@ -119,10 +120,6 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -227,7 +224,7 @@
 .advantages__clone:after {
     position: absolute;
     content: '';
-    background-image: url(../img/bg-triangle-white.svg); //    z-index: 2;
+    background-image: url(../img/bg-triangle-white.svg);
     left: 0;
     background-size: 100%;
     width: 100%;
@@ -238,20 +235,18 @@
     background-repeat: no-repeat;
 
     @media @mobile {
-        top: -175px;
+        top: 0px;
     }
     @media @tablet {
-        top: -150px;
+        top: 0px;
     }
     @media @desktop {
         top: 0;
         height: 22%;
 
     }
-} //.advantages .container {
-//    padding-left: 20px;
-//    padding-right: 20px;
-//}
+}
+
 .advantages__headline {
     font-size: 18px;
     line-height: 18px;
@@ -301,7 +296,6 @@
     @media @tablet {}
     @media @desktop {
         padding-left: 22px;
-        /* padding-top: 1px; */
         padding-right: 33px;
     }
 
@@ -377,6 +371,21 @@
 
 }
 
+.advantages__slogan {
+    @media @mobile {
+        padding-top: 40px;
+    }
+    @media @tablet {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+    @media @desktop {
+        padding-top: 68px;
+        padding-bottom: 70px;
+    }
+
+}
+
 .advantages__clone {
     position: relative;
 }
@@ -394,4 +403,8 @@
         margin-top: 25px;
     }
 
+}
+
+.advantages {
+    width: 100%;
 }
