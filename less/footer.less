@@ -45,15 +45,7 @@
     margin-bottom: 33px;
 }
 
-.footer__social {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 33px;
-}
+
 
 .social_link {
     width: 51px;
@@ -62,7 +54,7 @@
     background-repeat: no-repeat;
     border: 3px solid #F2F2F2;
     border-radius: 50%;
-    margin: 6px;
+
 }
 
 .social_link:hover {
@@ -131,6 +123,8 @@
     @media @desktop {
         font-size: 18px;
         line-height: 18px;
+        letter-spacing: 0.3px;
+        padding-top: 3px;
     }
 
 }
@@ -140,7 +134,7 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        margin-left: 15px;
+        margin-left: 14px;
     }
 
 }
@@ -222,4 +216,31 @@
 
 .logo-academy:active {
     fill: #DDDFE0;
+}
+
+.footer__social {
+    margin-bottom: 33px;
+    @media @mobile {
+        margin-bottom: 40px;
+    }
+    @media @tablet {}
+    @media @desktop {}
+
+}
+
+.footer__block {
+
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    padding-top: 5px;
+    padding-left: 6px;
+
+
+    margin-right: auto;
+    margin-left: auto;
+    @media @mobile {}
+    @media @tablet {}
+    @media @desktop {}
+
 }
