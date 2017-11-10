@@ -10,19 +10,18 @@ var headerForm = document.querySelector(".header--form");
 var headerIndex = document.querySelector(".header--index");
 
 headNav.classList.add("header__nav--hidden");
-
+headLogtog.classList.add("header__logtog-opacity");
 
 headToggler.addEventListener("click", function (evt) {
 
     headNav.classList.toggle("header__nav-show");
+    headLogtog.classList.toggle("header__logtog-opacity");
     headToggler.classList.add("header__logtog-close");
     headerToggler.classList.toggle("header__toggler-close");
     headerMenu.classList.toggle("header__menu-color");
-    headerToggler.classList.toggle("header__logtog-color");
     headLogtog.classList.toggle("header__logtog-color");
     headerPhoto.classList.toggle("header--photo-show");
     headerForm.classList.toggle("header--photo-show");
-    headerIndex.classList.toggle("header--index-show");
 
 });
 

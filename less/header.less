@@ -2,7 +2,6 @@
     font-size: 18px;
     line-height: 32px;
 }
-
 .header__link:hover {
     @media @mobile {
         color: @cherry;
@@ -11,10 +10,7 @@
         color: @cherry;
     }
     @media @desktop {}
-
 }
-
-
 .header__link:active {
     @media @mobile {
         color: @cherry;
@@ -25,82 +21,7 @@
         opacity: .3;
     }
     @media @desktop {}
-
 }
-
-//
-//.header--photo,
-//.header--form {
-//    @media @mobile {
-//        @media (min-resolution: @retina-dpi),
-//        (min-resolution: @retina-dppx) {
-//
-//            background-image: url(../img/bg-back-mobile@2x.jpg);
-//        }
-//        background-image: url(../img/bg-back-mobile@1x.jpg);
-//        background-position: center 0px;
-//        background-repeat: no-repeat;
-//
-//    }
-//    @media @tablet {}
-//    @media @desktop {}
-//
-//}
-.header {
-    background-color: @dark_blue;
-
-
-    color: @white;
-    @media @mobile {
-        @media (min-resolution: @retina-dpi),
-        (min-resolution: @retina-dppx) {
-
-            background-image: url(../img/bg-back-mobile@2x.jpg);
-        }
-        background-image: url(../img/bg-back-mobile@1x.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    @media @tablet {
-        background-image: url(../img/bg-back-tablet@1x.jpg);
-        background-position: center;
-        background-repeat: no-repeat; //        background-color: red;
-        background-size: cover;
-        @media (min-resolution: @retina-dpi),
-        (min-resolution: @retina-dppx) {
-            background-image: url(../img/bg-back-tablet@2x.jpg);
-        }
-
-    }
-    @media @desktop {
-        background-image: url(../img/bg-back-desktop@1x.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media (min-resolution: @retina-dpi),
-        (min-resolution: @retina-dppx) {
-            background-image: url(../img/bg-back-desktop@2x.jpg);
-        }
-    }
-
-}
-
-.header--index {
-    @media @mobile {
-        background-position: center 1px;
-    }
-    @media @tablet {}
-    @media @desktop {}
-
-}
-
-//.header__menu {
-//
-//    background-image: url(../img/bg-back-mobile@1x.jpg);
-//    background-position: center 256px;
-//    background-repeat: no-repeat;
-//
-//}
 .header__headline h1 {
     font-size: 24px;
     line-height: 29px;
@@ -114,9 +35,7 @@
         line-height: 60px;
     }
     @media @desktop {}
-
 }
-
 .header__headline {
     margin-bottom: 54px;
     @media @mobile {}
@@ -126,26 +45,13 @@
     @media @desktop {
         margin-bottom: 101px;
     }
-
 }
-
 .header--form {
     margin-bottom: 34px;
 }
-
 .header__menu--index {
     position: relative;
 }
-
-//.header__menu:after {
-//    position: absolute;
-//    content: '';
-//    background-image: url(../img/iphone-hand-mobile@1x.png);
-//    width: 258px;
-//    height: 286px;
-//    display: block;
-//    bottom: 242px;
-//}
 .header__nav {
     border-top: 1px solid #000;
     display: block;
@@ -153,16 +59,12 @@
     @media @tablet {}
     @media @desktop {
         display: block;
-
         border: none;
         width: 622px;
         border: none;
         margin-left: auto;
-
     }
-
 }
-
 .header__nav--hidden {
     @media @mobile {
         display: none;
@@ -173,59 +75,32 @@
     @media @desktop {
         display: block;
     }
-
 }
-
-
-
-
-
 .header__nav .header__item {
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
         padding-top: 38px;
     }
-
 }
-
 .header a {
     color: @white;
 }
-
 .download__link {
     font-size: 18px;
     line-height: 18px;
 }
-
 .header__logtog {
-
-    background-color: rgba(28, 37, 48, 0.5);
+    background-color: @dark_blue;
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
         background: none;
     }
-
 }
-
-.header__logtog-color {
-    @media @mobile {
-        background-color: @dark_blue;
-    }
-    @media @tablet {
-        background-color: @dark_blue;
-    }
-    @media @desktop {
-        background: none;
-    }
-
-}
-
 .header__menu {
     background-color: rgba(0, 0, 0, .3);
 }
-
 .header__menu-color {
     @media @mobile {
         background-color: @dark_blue;
@@ -236,14 +111,11 @@
     @media @desktop {
         background-color: rgba(0, 0, 0, .3);
     }
-
 }
-
 .download__choice {
     line-height: 24px;
     font-size: 14px;
 }
-
 .header__list {
     padding: 0;
     margin: 0;
@@ -251,30 +123,20 @@
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
         display: flex;
         background: none;
         justify-content: space-between;
     }
-
 }
-
 .header__item {
     border-bottom: 1px solid #000;
     border-top: 1px solid #485461;
     @media @mobile {}
     @media @tablet {}
     @media @desktop {
-
         border: none;
     }
-
 }
-
-
 .header__link {
     display: block;
     text-align: center;
@@ -287,15 +149,12 @@
     @media @tablet {}
     @media @desktop {
         font-weight: normal;
-        text-transform: inherit; //        padding-top: 38px;
-        //        padding-bottom: 39px;
+        text-transform: inherit;
         padding-top: 0;
         padding-bottom: 0;
         letter-spacing: 0.2px
     }
-
 }
-
 .header__link--here::before {
     @media @mobile {}
     @media @tablet {}
@@ -310,10 +169,7 @@
         width: 100%;
         border-bottom: 2px solid #fff;
     }
-
-
 }
-
 .header__logo {
     width: 75px;
     height: 23px;
@@ -331,9 +187,7 @@
         width: 147px;
         height: 41px;
     }
-
 }
-
 .header__logo--link:hover {
     @media @mobile {
         background-image: url(../img/logo-pink-white-mobile-hover.svg);
@@ -344,9 +198,7 @@
     @media @desktop {
         background-image: url(../img/logo-pink-white-desktop.svg);
     }
-
 }
-
 .header__logo--link:active {
     opacity: .6;
     @media @mobile {
@@ -358,9 +210,7 @@
     @media @desktop {
         background-image: url(../img/logo-pink-white-desktop.svg);
     }
-
 }
-
 .header__logtog {
     padding-top: 22px;
     padding-left: 20px;
@@ -379,9 +229,7 @@
         padding-left: 0;
         padding-right: 0;
     }
-
 }
-
 .header__toggler {
     width: 50px;
     height: 24px;
@@ -399,9 +247,7 @@
     @media @desktop {
         display: none;
     }
-
 }
-
 .header__toggler:hover {
     @media @mobile {
         background-image: url(../img/icon-menu-burger-hover.svg);
@@ -410,9 +256,7 @@
         background-image: url(../img/icon-menu-burger-hover.svg);
     }
     @media @desktop {}
-
 }
-
 .header__toggler:active {
     @media @mobile {
         background-image: url(../img/icon-menu-burger-hover.svg);
@@ -423,28 +267,23 @@
         opacity: .3;
     }
     @media @desktop {}
-
 }
-
 .header__toggler-close {
     background-image: url(../img/icon-menu-cross.svg);
     background-repeat: no-repeat;
     background-position: 27px 0;
 }
-
 .header__toggler-close:hover {
     background-image: url(../img/icon-menu-cross-hover.svg);
     background-repeat: no-repeat;
     background-position: 27px 0;
 }
-
 .header__toggler-close:active {
     background-image: url(../img/icon-menu-cross-hover.svg);
     background-repeat: no-repeat;
     background-position: 27px 0;
     opacity: .3;
 }
-
 .header .container {
     @media @mobile {}
     @media @tablet {}
@@ -453,9 +292,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 }
-
 .header--form .header__headline {
     padding-top: 13px;
     @media @mobile {}
@@ -465,9 +302,7 @@
     @media @desktop {
         padding-top: 29px;
     }
-
 }
-
 .gallery .main__subtitle {
     @media @mobile {}
     @media @tablet {
@@ -475,14 +310,11 @@
         margin-bottom: 76px;
     }
     @media @desktop {}
-
 }
-
 .header--form .header__menu--form {
     padding-bottom: 1px;
     background-position: center 246px;
 }
-
 .header--photo .header__headline {
     padding-top: 12px;
     @media @mobile {
@@ -500,9 +332,7 @@
         padding-top: 30px;
         margin-bottom: 101px;
     }
-
 }
-
 .header--photo .header__menu {
     padding-bottom: 30px;
     background-position: center 256px;
@@ -513,10 +343,7 @@
         padding-bottom: 0;
     }
     @media @desktop {}
-
 }
-
-
 .header__menu .container {
     @media @mobile {}
     @media @tablet {}
@@ -532,9 +359,7 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-
 }
-
 .header--photo .header--photo {
     @media @mobile {}
     @media @tablet {}
@@ -545,46 +370,99 @@
         padding-right: 10px;
         padding-left: 10px;
     }
-
 }
-
 .header__nav-show {
     display: block;
 }
-
 .gallery {
     @media @mobile {}
     @media @tablet {
         padding-top: 78px;
     }
     @media @desktop {}
-
 }
-
-
-
 .header--photo-show {
-    background-position: center bottom; //    background-position: center 256px;
+    background-position: center bottom;
     @media @mobile {}
     @media @tablet {
         padding-bottom: 30px;
     }
-    @media @desktop {}
-
+    @media @desktop {
+        padding-bottom: 0;
+    }
 }
-
-.header--index-show {
-
+.header__logtog-opacity {
     @media @mobile {
-        background-position: center 260px;
+        background-color: rgba(28, 37, 48, 0.5);
     }
     @media @tablet {
-        //        padding-bottom: 30px;
+        background-color: rgba(28, 37, 48, 0.5);
     }
-    @media @desktop {}
-
+    @media @desktop {
+        background: none;
+    }
 }
-
-//при клике на header__logtog 
-//header__nav добавляем класс 
-//.header__nav-show
+.header__nav-show {
+    display: block;
+}
+.header--index {
+    @media @mobile {
+        background: none;
+    }
+    @media @tablet {}
+    @media @desktop {}
+}
+.header {
+    background-color: @dark_blue;
+    color: @white;
+    @media @mobile {
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-mobile@2x.jpg);
+        }
+        background-image: url(../img/bg-back-mobile@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @media @tablet {
+        background-image: url(../img/bg-back-tablet@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-tablet@2x.jpg);
+        }
+    }
+    @media @desktop {
+        background-image: url(../img/bg-back-desktop@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-desktop@2x.jpg);
+        }
+    }
+}
+.header--index {
+    @media @mobile {
+        background: none;
+        background-color: @dark_blue;
+    }
+    @media @tablet {
+        background-image: url(../img/bg-back-tablet@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-tablet@2x.jpg);
+        }
+    }
+    @media @desktop {
+        background-image: url(../img/bg-back-desktop@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/bg-back-desktop@2x.jpg);
+        }
+    }
+}
